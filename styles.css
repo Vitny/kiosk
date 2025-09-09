@@ -383,11 +383,6 @@ body {
   resize: none;
 }
 
-/* show/hide */
-.hide {
-  display: none;
-}
-
 /* Feedback */
 .feedback-container {
   display: flex;
@@ -524,9 +519,22 @@ body {
 }
 
 /* Navigate */
-.toogle-booking {
+.navigate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-navigate {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.toogle-navigate {
   position: relative;
-  width: 100%;
+  width: 642px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -538,9 +546,9 @@ body {
   font-weight: 500;
 }
 
-.toggle-active-bg {
+.toggle-active-bg-nav {
   position: absolute;
-  width: 50%;
+  width: 33%;
   height: 100%;
   background-color: var(--accent-blue);
   z-index: 1;
@@ -554,10 +562,41 @@ body {
   z-index: 3;
 }
 
-.adult-booking-p,
-.kids-booking-p {
-  width: 50%;
+.adult-nav,
+.kids-nav,
+.optics-nav {
+  width: 33%;
   height: 100%;
+}
+
+.content-navigate-dep {
+  margin-top: 32px;
+  display: flex;
+  gap: 12px;
+}
+
+.nav-header {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.nav-subheader {
+  margin-top: 12px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.nav-text {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+
+/* show/hide */
+.hide {
+  display: none;
 }
 
 /* стили */

@@ -2,83 +2,105 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Navigate</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Navigate</title>
 </head>
 
 <body>
-    <header>
-        <div class="news-section">
-            <div class="news-content">
-                <div>
-                    <p class="news-header">Рассрочка 0%</p>
-                    <p class="news-text">Без процентов и переплат</p>
-                    <div class="news-slider-buttons">
-                        <div class="news-slider-button"></div>
-                        <div class="news-slider-button active-slide"></div>
-                        <div class="news-slider-button"></div>
-                        <div class="news-slider-button"></div>
-                    </div>
-                </div>
-                <a class="detail-button" href="">Подробнее</a>
-            </div>
-            <div class="news-buttons">
-                <button class="left-button-news">
-                    <img src="assets/svg/arrow-news.svg" alt="arroww icon">
-                </button>
-                <button class="right-button-news">
-                    <img src="assets/svg/arrow-news.svg" alt="arroww icon">
-                </button>
-            </div>
+  <header>
+    <div class="news-section">
+      <div class="news-content">
+        <div>
+          <p class="news-header">Рассрочка 0%</p>
+          <p class="news-text">Без процентов и переплат</p>
+          <div class="news-slider-buttons">
+            <div class="news-slider-button"></div>
+            <div class="news-slider-button active-slide"></div>
+            <div class="news-slider-button"></div>
+            <div class="news-slider-button"></div>
+          </div>
         </div>
-        <div class="search-input">
-            <img src="assets/svg/search-icon.svg" alt="magnifier icon">
-            <input type="search" id="search" placeholder="Поиск по всем разделам">
-        </div>
-    </header>
+        <a class="detail-button" href="">Подробнее</a>
+      </div>
+      <div class="news-buttons">
+        <button class="left-button-news">
+          <img src="assets/svg/arrow-news.svg" alt="arroww icon">
+        </button>
+        <button class="right-button-news">
+          <img src="assets/svg/arrow-news.svg" alt="arroww icon">
+        </button>
+      </div>
+    </div>
+    <div class="search-input">
+      <img src="assets/svg/search-icon.svg" alt="magnifier icon">
+      <input type="search" id="search" placeholder="Поиск по всем разделам">
+    </div>
+  </header>
 
-    <main class="container">
-        <div class="left-section">
-            <div></div>
-            <a class="back-button" href="">
-                <img src="assets/svg/arrow-icon.svg" alt="arroww icon">
-                Назад
-            </a>
+  <main class="container">
+    <div class="left-section">
+      <div></div>
+      <a class="back-button" href="">
+        <img src="assets/svg/arrow-icon.svg" alt="arroww icon">
+        Назад
+      </a>
+    </div>
+    <div class="main-content">
+      <div class="bread-crumbs-text">
+        <span>Главный экран</span>
+        <span>—</span>
+        <span>Навигация в клинике</span>
+      </div>
+      <div class="navigate-container">
+        <p class="content-header">Навигация в клинике</p>
+        <div class="content-navigate">
+          <div class="toogle-navigate">
+            <div class="toggle-active-bg-nav"></div>
+            <button class="adult-nav active-btn">
+              Взрослое
+            </button>
+            <button class="kids-nav">
+              Детское
+            </button>
+            <button class="optics-nav">
+              Оптика
+            </button>
+          </div>
         </div>
-        <div class="main-content">
-            <div class="bread-crumbs-text">
-                <span>Главный экран</span>
-                <span>—</span>
-                <span>Навигация в клинике</span>
-            </div>
-            <div class="feedback-container">
-                <p class="content-header">Навигация в клинике</p>
-                <div class="content-booking">
-                    <div class="toogle-booking">
-                        <div class="toggle-active-bg"></div>
-                        <button class="adult-booking-p active-btn">
-                            Взрослое
-                        </button>
-                        <button class="kids-booking-p">
-                            Детское
-                        </button>
-                        <button class="kids-booking-p">
-                            Оптика
-                        </button>
-                    </div>
-                </div>
-            </div>
+        <div class="content-navigate-dep adult-nav-content">
+          <div class="text-content">
+            <p class="nav-header">Взрослое отделение</p>
+            <p class="nav-subheader">Диагностика</p>
+            <p class="nav-text">За гардеробом повернуть направо и пройти к лифту. Подняться на 3-й этаж</p>
+          </div>
+          <img src="assets/jpg/navigate/nav1.jpg" alt="navigate map">
         </div>
-        <div class="right-section">
-            <div></div>
-            <a class="home-button" href="">
-                <img src="assets/svg/home-icon.svg" alt="arroww icon">
-                На главный экран
-            </a>
+        <div class="content-navigate-dep kids-nav-content hide">
+          <div class="text-content">
+            <p class="nav-header">Детское отделение</p>
+            <p class="nav-text">За гардеробом повернуть направо и пройти к лифту. Подняться на 3-й этаж</p>
+          </div>
+          <img src="assets/jpg/navigate/nav2.jpg" alt="navigate map">
         </div>
-    </main>
+        <div class="content-navigate-dep optics-nav-content hide">
+          <div class="text-content">
+            <p class="nav-header">Оптика</p>
+            <p class="nav-text">За гардеробом повернуть направо и пройти к лифту. Подняться на 3-й этаж</p>
+          </div>
+          <img src="assets/jpg/navigate/nav3.jpg" alt="navigate map">
+        </div>
+      </div>
+    </div>
+    <div class="right-section">
+      <div></div>
+      <a class="home-button" href="">
+        <img src="assets/svg/home-icon.svg" alt="arroww icon">
+        На главный экран
+      </a>
+    </div>
+  </main>
 
 </body>
 
