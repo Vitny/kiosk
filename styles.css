@@ -145,7 +145,6 @@ body {
 }
 
 /* общие объекты */
-
 /* header */
 .news-section {
   padding: 20px 40px 12px;
@@ -384,6 +383,10 @@ body {
   resize: none;
 }
 
+/* show/hide */
+.hide {
+  display: none;
+}
 
 /* Feedback */
 .feedback-container {
@@ -470,6 +473,11 @@ body {
 }
 
 /* Booking */
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .content-booking {
   margin-top: 12px;
@@ -515,11 +523,41 @@ body {
   height: 100%;
 }
 
+/* Navigate */
+.toogle-booking {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--light-grey);
+  height: 60px;
+  border-radius: 10px;
 
-/* show/hide */
+  font-size: 20px;
+  font-weight: 500;
+}
 
-.hide {
-  display: none;
+.toggle-active-bg {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: var(--accent-blue);
+  z-index: 1;
+  left: 0;
+  border-radius: 10px;
+  transition: left 0.3s ease;
+}
+
+.active-btn {
+  color: white;
+  z-index: 3;
+}
+
+.adult-booking-p,
+.kids-booking-p {
+  width: 50%;
+  height: 100%;
 }
 
 /* стили */
@@ -534,7 +572,9 @@ body {
   --skyblue: #EDF7FF;
   --lightblue: #C1D6E9;
   --turquoise: #8AA3B9;
-  --dfg --pale-grey: #F6F6F6;
+  --darkblue: #0051A9;
+
+  --pale-grey: #F6F6F6;
   --light-grey: #EAEAEA;
   --medium-grey: #D6D6D6;
   --grey: #999;
