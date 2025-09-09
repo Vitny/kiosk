@@ -55,17 +55,37 @@
       </div>
       <div class="feedback-container">
         <p class="content-header">Записаться на приём</p>
-        <div class="content-feedback">
+        <div class="content-booking">
+          <div class="toogle-booking">
+            <div class="toggle-active-bg"></div>
+            <button class="adult-booking-p active-btn">
+              Взрослым
+            </button>
+            <button class="kids-booking-p">
+              Детям
+            </button>
+          </div>
           <input class="textfield" type="text" placeholder="ФИО">
+          <input class="textfield kid-name hide" type="text" placeholder="ФИО ребёнка">
           <input class="textfield" type="email" placeholder="Email">
+          <input class="textfield" type="tel" placeholder="+7 ___ ___ __ __">
+          <textarea class="textfield comment" type="text" placeholder="Комментарий к записи"></textarea>
           <div class="checkbox-docs">
             <input type="checkbox">
             <div class="text-docs">
               <p>Заполняя форму Вы соглашаетесь</p>
-              <p>с <a class="checkbox-docs-link" href="">политикой конфиденциальности клиники «Эксимер»
-                </a></p>
-              <p>и даете <a class="checkbox-docs-link" href="">согласие на обработку персональных
-                  данных</a></p>
+              <p>
+                с
+                <a class="checkbox-docs-link" href="">
+                  политикой конфиденциальности клиники «Эксимер»
+                </a>
+              </p>
+              <p>
+                и даете
+                <a class="checkbox-docs-link" href="">согласие на обработку персональных
+                  данных
+                </a>
+              </p>
             </div>
           </div>
           <button class="button-main">Отправить заявку</button>
