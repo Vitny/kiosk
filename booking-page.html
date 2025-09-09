@@ -2,13 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Booking</title>
 </head>
 
 <body>
+  <header>
+    <div class="news-section">
+      <div class="news-content">
+        <div>
+          <p class="news-header">Рассрочка 0%</p>
+          <p class="news-text">Без процентов и переплат</p>
+          <div class="news-slider-buttons">
+            <div class="news-slider-button"></div>
+            <div class="news-slider-button active-slide"></div>
+            <div class="news-slider-button"></div>
+            <div class="news-slider-button"></div>
+          </div>
+        </div>
+        <a class="detail-button" href="">Подробнее</a>
+      </div>
+      <div class="news-buttons">
+        <button class="left-button-news">
+          <img src="assets/svg/arrow-news.svg" alt="arroww icon">
+        </button>
+        <button class="right-button-news">
+          <img src="assets/svg/arrow-news.svg" alt="arroww icon">
+        </button>
+      </div>
+    </div>
+    <div class="search-input">
+      <img src="assets/svg/search-icon.svg" alt="magnifier icon">
+      <input type="search" id="search" placeholder="Поиск по всем разделам">
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="left-section">
+      <div></div>
+      <a class="back-button" href="">
+        <img src="assets/svg/arrow-icon.svg" alt="arroww icon">
+        Назад
+      </a>
+    </div>
+    <div class="main-content">
+      <div class="bread-crumbs-text">
+        <span>Главный экран</span>
+        <span>—</span>
+        <span>Запись на приём</span>
+      </div>
+      <div class="feedback-container">
+        <p class="content-header">Записаться на приём</p>
+        <div class="content-feedback">
+          <input class="textfield" type="text" placeholder="ФИО">
+          <input class="textfield" type="email" placeholder="Email">
+          <div class="checkbox-docs">
+            <input type="checkbox">
+            <div class="text-docs">
+              <p>Заполняя форму Вы соглашаетесь</p>
+              <p>с <a class="checkbox-docs-link" href="">политикой конфиденциальности клиники «Эксимер»
+                </a></p>
+              <p>и даете <a class="checkbox-docs-link" href="">согласие на обработку персональных
+                  данных</a></p>
+            </div>
+          </div>
+          <button class="button-main">Отправить заявку</button>
+        </div>
+      </div>
+    </div>
+    <div class="right-section">
+      <div></div>
+      <a class="home-button" href="">
+        <img src="assets/svg/home-icon.svg" alt="arroww icon">
+        На главный экран
+      </a>
+    </div>
+  </main>
 
 </body>
+
+<script src="script.js"></script>
 
 </html>
