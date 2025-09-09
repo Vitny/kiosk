@@ -283,6 +283,12 @@ body {
   font-weight: 500;
 }
 
+.back-button:active,
+.home-button:active {
+  border: 6px solid var(--accent-blue);
+  background-color: var(--turquoise);
+}
+
 .home-button {
   flex-direction: column;
   gap: 0;
@@ -353,6 +359,9 @@ body {
   font-weight: 500;
 }
 
+.star-fill {
+  fill: #D89F02;
+}
 
 .rate-tag-cloud {
   display: flex;
@@ -361,6 +370,7 @@ body {
 
 .rating {
   display: flex;
+  flex-direction: row-reverse;
   gap: 8px;
 }
 
@@ -397,8 +407,8 @@ body {
 }
 
 .rate-tag-cloud input[type="checkbox"]:checked+label {
-  background: #FF7000;
-  border: none;
+  background: var(--accent-orange);
+  border: 1px solid var(--accent-orange);
   color: white;
 }
 
@@ -449,8 +459,19 @@ body {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 1.2px;
+
+  margin-top: 20px;
 }
 
+.button-main:active {
+  background: var(--turquoise);
+}
+
+/* show/hide */
+
+.hide {
+  display: none;
+}
 
 /* стили */
 :root {
