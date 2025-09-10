@@ -692,6 +692,7 @@ body {
   overflow: hidden;
   box-shadow: var(--medium-shadow);
   flex-shrink: 0;
+  position: relative;
 }
 
 .special-card-text {
@@ -725,6 +726,21 @@ body {
   width: 580px;
   height: 248px;
   object-fit: cover;
+}
+
+.period-special {
+  margin: 16px 0 0 20px;
+  position: absolute;
+  display: flex;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: var(--accent-orange);
+
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 
