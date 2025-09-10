@@ -120,8 +120,8 @@ input[type='file'] {
   max-width: 100%;
 }
 
-
-/* системные объекты */
+/* общие объекты */
+/* глобальные объекты */
 @font-face {
   font-family: 'Montserrat';
   src: url('font/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
@@ -136,6 +136,25 @@ input[type='file'] {
   font-style: italic;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-grey);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--turquoise);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--darkblue);
+}
+
 body {
   width: 1920px;
   height: 1080px;
@@ -144,7 +163,6 @@ body {
   padding: 20px 40px;
 }
 
-/* общие объекты */
 /* header */
 .news-section {
   padding: 20px 40px 12px;
@@ -247,8 +265,6 @@ body {
   box-shadow: var(--small-shadow);
 }
 
-
-
 /* main */
 .container {
   display: flex;
@@ -297,6 +313,7 @@ body {
 
 .main-content {
   flex: 1;
+  overflow: hidden;
 }
 
 .bread-crumbs-text {
@@ -383,6 +400,8 @@ body {
   resize: none;
 }
 
+
+/* Страницы */
 /* Feedback */
 .feedback-container {
   display: flex;
@@ -593,6 +612,53 @@ body {
   margin-left: 8px;
 }
 
+
+/* Optics */
+.optics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1350px;
+}
+
+.optics-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 12px;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+}
+
+.optic-card {
+  width: 420px;
+  height: 700px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--medium-shadow);
+  flex-shrink: 0;
+}
+
+.optic-card-text {
+  display: flex;
+  padding: 20px 28px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.optic-card-header {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.optic-card-subheader {
+  font-size: 22px;
+  font-weight: 400;
+}
 
 /* show/hide */
 .hide {
