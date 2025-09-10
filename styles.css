@@ -668,6 +668,78 @@ body {
 
 
 /* Special offers */
+.discount-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1350px;
+  height: 808px;
+}
+
+.discount-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 12px;
+  gap: 24px;
+  overflow-y: auto;
+  padding: 0 16px 20px 4px;
+}
+
+.discount-card {
+  width: 420px;
+  height: 340px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--item-shadow);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.discount-card-text {
+  display: flex;
+  padding: 8px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.discount-card-header {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.discount-card-maintext {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.discount-card-photo {
+  width: 580px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.period-discount {
+  margin: 16px 0 0 20px;
+  position: absolute;
+  display: flex;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: var(--accent-orange);
+
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* Discount list */
 .special-container {
   display: flex;
   flex-direction: column;
