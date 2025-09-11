@@ -1,0 +1,119 @@
+/* Doctors list */
+.doctors-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1350px;
+  height: 808px;
+}
+
+.doctors-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 12px;
+  gap: 14px;
+  overflow-y: auto;
+  padding: 0 16px 20px 8px;
+}
+
+.doctors-card {
+  width: 316px;
+  height: 340px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--item-shadow);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.doctors-card-pic {
+  position: relative;
+  width: 580px;
+  height: 200px;
+}
+
+.doctors-bg {
+  position: absolute;
+  z-index: -1000;
+}
+
+.doctors-card-photo {
+  position: absolute;
+  z-index: -100;
+  top: -60px;
+  left: -50px;
+  transform: scale(0.8);
+}
+
+.doctors-card-text {
+  display: flex;
+  height: 100%;
+  padding: 8px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+  align-self: stretch;
+  background-color: white;
+}
+
+.doctors-card-header {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.doctors-card-maintext {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+.filter-tags {
+  margin-top: -10px;
+}
+
+.filter-tags-specs,
+.filter-tags-dep {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: left;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.filter-tags-specs p,
+.filter-tags-dep p {
+  font-weight: 700;
+}
+
+.filter-tags-specs label,
+.filter-tags-dep label {
+  display: flex;
+  padding: 10px 7px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  border-radius: 6px;
+  border: 1px solid #999;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.filter-tags-specs input[type="checkbox"]:checked+label,
+.filter-tags-dep input[type="checkbox"]:checked+label {
+  background: var(--accent-orange);
+  border: 1px solid var(--accent-orange);
+  color: white;
+}
+
+.filter-header {
+  display: flex;
+  font-size: 20px;
+  gap: 12px;
+}
