@@ -107,6 +107,64 @@
 }
 
 .review-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   width: 400px;
   padding: 16px;
+  border-radius: 10px;
+  background: var(--pale-grey);
+  box-shadow: 0 4px 10px 0 rgba(0, 29, 103, 0.15);
+  backdrop-filter: blur(3.75px);
+
+  align-self: flex-start;
+}
+
+.review-section-header {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.review-header {
+  display: flex;
+  gap: 16px;
+}
+
+.review-author {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(83, 83, 83);
+}
+
+.review-text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+.review-date {
+  text-align: end;
+  color: var(--grey);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.review-divider {
+  background-color: var(--grey);
+  width: 100%;
+  height: 1px;
+}
+
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px 0 0;
+}
+
+.review-button {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 16px;
 }
