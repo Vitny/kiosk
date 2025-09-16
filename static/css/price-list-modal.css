@@ -78,7 +78,8 @@
 .arrow-promotion {
   position: absolute;
   right: 10px;
-  top: 14px;
+  top: 52%;
+  transform: translateY(-50%);
 }
 
 .services.class-grid.odd {
