@@ -75,6 +75,11 @@
   margin: 12px 24px;
 }
 
+
+.item.price.promotion.border-promotion:active {
+  background-color: rgba(104, 9, 9, 0.327);
+}
+
 .arrow-promotion {
   position: absolute;
   right: 10px;
