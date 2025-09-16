@@ -405,6 +405,14 @@ body {
   display: none;
 }
 
+/* modal window */
+.close-icon {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+
 /* стили */
 :root {
   --Gradient-orange: linear-gradient(86deg, #FF9623 19.24%, rgba(255, 89, 18, 0.91) 106.12%);
