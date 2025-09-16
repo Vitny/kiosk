@@ -1,0 +1,32 @@
+.price-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1350px;
+  height: 808px;
+  gap: 12px;
+}
+
+.price-list-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  padding-right: 12px;
+}
+
+.price-list-button {
+  display: flex;
+  padding: 16px 20px;
+  background-color: var(--skyblue);
+  border-radius: 12px;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.price-list-button img {
+  width: 32px;
+  height: 32px;
+}
