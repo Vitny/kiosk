@@ -116,22 +116,24 @@ legend {
   display: block;
 }
 
-input[type='file'] {
+input[type="file"] {
   max-width: 100%;
 }
 
 /* общие объекты */
 /* глобальные объекты */
 @font-face {
-  font-family: 'Montserrat';
-  src: url('font/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: url("font/Montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: url("font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-style: italic;
 }
@@ -158,7 +160,7 @@ input[type='file'] {
 body {
   width: 1920px;
   height: 1080px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border-style: double;
   padding: 20px 40px;
 }
@@ -186,7 +188,7 @@ body {
   padding: 22px 36px;
   border-radius: 8px;
   background: var(--Gradient-orange);
-  box-shadow: 0 4px 10px 0 rgba(255, 150, 35, 0.50);
+  box-shadow: 0 4px 10px 0 rgba(255, 150, 35, 0.5);
 
   color: white;
   font-size: 24px;
@@ -392,14 +394,13 @@ body {
 
   border-radius: 8px;
   border: 1px solid var(--medium-grey);
-  box-shadow: var(--small-shadow)
+  box-shadow: var(--small-shadow);
 }
 
 .comment {
   height: 124px;
   resize: none;
 }
-
 
 /* Страницы */
 /* Feedback */
@@ -434,7 +435,7 @@ body {
 }
 
 .star-fill {
-  fill: #D89F02;
+  fill: #d89f02;
 }
 
 .rate-tag-cloud {
@@ -450,7 +451,7 @@ body {
 
 .star {
   stroke-width: 3px;
-  stroke: #D89F02;
+  stroke: #d89f02;
 }
 
 .rate-tag-section {
@@ -480,61 +481,10 @@ body {
   transition: all 0.2s ease;
 }
 
-.rate-tag-cloud input[type="checkbox"]:checked+label {
+.rate-tag-cloud input[type="checkbox"]:checked + label {
   background: var(--accent-orange);
   border: 1px solid var(--accent-orange);
   color: white;
-}
-
-/* Booking */
-.booking-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.content-booking {
-  margin-top: 12px;
-  width: 644px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.toogle-booking {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--light-grey);
-  height: 60px;
-  border-radius: 10px;
-
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.toggle-active-bg {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  background-color: var(--accent-blue);
-  z-index: 1;
-  left: 0;
-  border-radius: 10px;
-  transition: left 0.3s ease;
-}
-
-.active-btn {
-  color: white;
-  z-index: 3;
-}
-
-.adult-booking-p,
-.kids-booking-p {
-  width: 50%;
-  height: 100%;
 }
 
 /* Navigate */
@@ -612,7 +562,6 @@ body {
   margin-left: 8px;
 }
 
-
 /* Optics */
 .optics-container {
   display: flex;
@@ -665,7 +614,6 @@ body {
   height: 480px;
   object-fit: cover;
 }
-
 
 /* Discount list */
 .discount-container {
@@ -747,7 +695,6 @@ body {
   height: 808px;
 }
 
-
 .discount-offer-content {
   margin-top: 16px;
   width: 900px;
@@ -811,7 +758,6 @@ body {
   display: flex;
   gap: 36px;
 }
-
 
 /* Special offers */
 .special-container {
@@ -889,8 +835,6 @@ body {
   font-weight: 600;
 }
 
-
-
 /* show/hide */
 .hide {
   display: none;
@@ -898,26 +842,36 @@ body {
 
 /* стили */
 :root {
-  --Gradient-orange: linear-gradient(86deg, #FF9623 19.24%, rgba(255, 89, 18, 0.91) 106.12%);
-  --Gradient-news-background: linear-gradient(66deg, rgba(230, 232, 234, 0.69) 48.61%, #299DFF 155.88%);
+  --Gradient-orange: linear-gradient(
+    86deg,
+    #ff9623 19.24%,
+    rgba(255, 89, 18, 0.91) 106.12%
+  );
+  --Gradient-news-background: linear-gradient(
+    66deg,
+    rgba(230, 232, 234, 0.69) 48.61%,
+    #299dff 155.88%
+  );
 
-  --accent-blue: #0070D1;
-  --accent-orange: #FF7000;
-  --warning-red: #A30000;
+  --accent-blue: #0070d1;
+  --accent-orange: #ff7000;
+  --warning-red: #a30000;
 
-  --skyblue: #EDF7FF;
-  --lightblue: #C1D6E9;
-  --turquoise: #8AA3B9;
-  --darkblue: #0051A9;
+  --skyblue: #edf7ff;
+  --lightblue: #c1d6e9;
+  --turquoise: #8aa3b9;
+  --darkblue: #0051a9;
 
-  --pale-grey: #F6F6F6;
-  --light-grey: #EAEAEA;
-  --medium-grey: #D6D6D6;
+  --pale-grey: #f6f6f6;
+  --light-grey: #eaeaea;
+  --medium-grey: #d6d6d6;
   --grey: #999;
 
-  --button-shadow: 0 4px 10px 0 rgba(15, 101, 173, 0.50);
-  --item-shadow: 0 18px 80px 0 rgba(30, 132, 217, 0.07), 0 4.021px 17.869px 0 rgba(30, 132, 217, 0.04), 0 1.197px 5.32px 0 rgba(30, 132, 217, 0.03);
+  --button-shadow: 0 4px 10px 0 rgba(15, 101, 173, 0.5);
+  --item-shadow: 0 18px 80px 0 rgba(30, 132, 217, 0.07),
+    0 4.021px 17.869px 0 rgba(30, 132, 217, 0.04),
+    0 1.197px 5.32px 0 rgba(30, 132, 217, 0.03);
   --small-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.06);
   --medium-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.05);
-  --big-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.10);
+  --big-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.1);
 }

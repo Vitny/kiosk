@@ -1,108 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/variables.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/booking.css" />
+    <title>Booking</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Booking</title>
-</head>
-
-<body>
-  <header>
-    <div class="news-section">
-      <div class="news-content">
-        <div>
-          <p class="news-header">Рассрочка 0%</p>
-          <p class="news-text">Без процентов и переплат</p>
-          <div class="news-slider-buttons">
-            <div class="news-slider-button"></div>
-            <div class="news-slider-button active-slide"></div>
-            <div class="news-slider-button"></div>
-            <div class="news-slider-button"></div>
-          </div>
+  <body>
+    <header>
+      <div class="header-buttons-section">
+        <div class="header-buttons">
+          <button class="button-header booking">Записаться</button>
+          <button class="button-header feedback">Оставить отзыв</button>
         </div>
-        <a class="detail-button" href="">Подробнее</a>
+        <div class="news-section">
+          <div class="news-content">
+            <div class="news-swiper">
+              <p class="news-header">Рассрочка 0%</p>
+              <p class="news-text">Без процентов и переплат</p>
+              <div class="news-slider-buttons">
+                <button class="news-slider-button"></button>
+                <button class="news-slider-button active-slide"></button>
+                <button class="news-slider-button"></button>
+                <button class="news-slider-button"></button>
+              </div>
+            </div>
+            <a class="detail-button" href="">Подробнее</a>
+          </div>
+          <div class="news-buttons">
+            <button class="left-button-news">
+              <img src="assets/svg/arrow-news.svg" alt="arroww icon" />
+            </button>
+            <button class="right-button-news">
+              <img src="assets/svg/arrow-news.svg" alt="arroww icon" />
+            </button>
+          </div>
+          <p class="news-disclaimer">
+            Реклама. Имеются противопоказания. Проконсультируйтесь со
+            специалистом.
+          </p>
+        </div>
       </div>
-      <div class="news-buttons">
-        <button class="left-button-news">
-          <img src="assets/svg/arrow-news.svg" alt="arroww icon">
-        </button>
-        <button class="right-button-news">
-          <img src="assets/svg/arrow-news.svg" alt="arroww icon">
-        </button>
+      <div class="search-input">
+        <img src="assets/svg/search-icon.svg" alt="magnifier icon" />
+        <input type="search" id="search" placeholder="Поиск по всем разделам" />
       </div>
-    </div>
-    <div class="search-input">
-      <img src="assets/svg/search-icon.svg" alt="magnifier icon">
-      <input type="search" id="search" placeholder="Поиск по всем разделам">
-    </div>
-  </header>
-
-  <main class="container">
-    <div class="left-section">
-      <div></div>
-      <a class="back-button" href="">
-        <img src="assets/svg/arrow-icon.svg" alt="arroww icon">
-        Назад
-      </a>
-    </div>
-    <div class="main-content">
       <div class="bread-crumbs-text">
         <span>Главный экран</span>
         <span>—</span>
         <span>Запись на приём</span>
       </div>
-      <div class="booking-container">
-        <p class="content-header">Записаться на приём</p>
-        <div class="content-booking">
-          <div class="toogle-booking">
-            <div class="toggle-active-bg"></div>
-            <button class="adult-booking-p active-btn">
-              Взрослым
-            </button>
-            <button class="kids-booking-p">
-              Детям
-            </button>
-          </div>
-          <input class="textfield" type="text" placeholder="ФИО">
-          <input class="textfield kid-name hide" type="text" placeholder="ФИО ребёнка">
-          <input class="textfield" type="email" placeholder="Email">
-          <input class="textfield" type="tel" placeholder="+7 ___ ___ __ __">
-          <textarea class="textfield comment" type="text" placeholder="Комментарий к записи"></textarea>
-          <div class="checkbox-docs">
-            <input type="checkbox">
-            <div class="text-docs">
-              <p>Заполняя форму Вы соглашаетесь</p>
-              <p>
-                с
-                <a class="checkbox-docs-link" href="">
-                  политикой конфиденциальности клиники «Эксимер»
-                </a>
-              </p>
-              <p>
-                и даете
-                <a class="checkbox-docs-link" href="">согласие на обработку персональных
-                  данных
-                </a>
-              </p>
+    </header>
+
+    <main class="container">
+      <div class="left-section">
+        <div></div>
+        <a class="back-button" href="">
+          <img src="assets/svg/arrow-icon.svg" alt="arroww icon" />
+          Назад
+        </a>
+      </div>
+      <div class="main-content">
+        <div class="booking-container">
+          <p class="content-header">Записаться на приём</p>
+          <div class="content-booking">
+            <div class="toogle-booking">
+              <div class="toggle-active-bg"></div>
+              <button class="adult-booking-p active-btn">Взрослым</button>
+              <button class="kids-booking-p">Детям</button>
             </div>
+            <input class="textfield" type="text" placeholder="ФИО" />
+            <input
+              class="textfield kid-name hide"
+              type="text"
+              placeholder="ФИО ребёнка"
+            />
+            <input class="textfield" type="email" placeholder="Email" />
+            <input
+              class="textfield"
+              type="tel"
+              placeholder="+7 ___ ___ __ __"
+            />
+            <textarea
+              class="textfield comment"
+              type="text"
+              placeholder="Комментарий к записи"
+            ></textarea>
+            <div class="checkbox-docs">
+              <input type="checkbox" />
+              <div class="text-docs">
+                <p>
+                  Заполняя форму Вы соглашаетесь с
+                  <a class="checkbox-docs-link" href="">
+                    политикой конфиденциальности клиники «Эксимер»
+                  </a>
+                  и даете
+                  <a class="checkbox-docs-link" href=""
+                    >согласие на обработку персональных данных
+                  </a>
+                </p>
+              </div>
+            </div>
+            <button class="button-main booking">Отправить заявку</button>
           </div>
-          <button class="button-main">Отправить заявку</button>
         </div>
       </div>
-    </div>
-    <div class="right-section">
-      <div></div>
-      <a class="home-button" href="">
-        <img src="assets/svg/home-icon.svg" alt="arroww icon">
-        На главный экран
-      </a>
-    </div>
-  </main>
+      <div class="right-section">
+        <div></div>
+        <a class="home-button" href="">
+          <img src="assets/svg/home-icon.svg" alt="arroww icon" />
+          На главный экран
+        </a>
+      </div>
+    </main>
+  </body>
 
-</body>
-
-<script src="script.js"></script>
-
+  <script src="static/js/booking.js"></script>
 </html>

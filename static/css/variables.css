@@ -1,0 +1,31 @@
+/* стили */
+:root {
+  --Gradient-orange: linear-gradient(86deg, #ff5912 19.24%, #ff9623 106.12%);
+  --Gradient-blue: linear-gradient(
+    91.01deg,
+    rgba(18, 170, 255, 0.83) -7.24%,
+    #1577ca 91.55%
+  );
+
+  --accent-blue: #0070d1;
+  --accent-orange: #ff7000;
+  --warning-red: #a30000;
+
+  --skyblue: #edf7ff;
+  --lightblue: #c1d6e9;
+  --turquoise: #8aa3b9;
+  --darkblue: #0051a9;
+
+  --pale-grey: #f6f6f6;
+  --light-grey: #eaeaea;
+  --medium-grey: #d6d6d6;
+  --grey: #999;
+
+  --button-shadow: 0 4px 10px 0 rgba(15, 101, 173, 0.5);
+  --item-shadow: 0 18px 80px 0 rgba(30, 132, 217, 0.07),
+    0 4.021px 17.869px 0 rgba(30, 132, 217, 0.04),
+    0 1.197px 5.32px 0 rgba(30, 132, 217, 0.03);
+  --small-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.06);
+  --medium-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.05);
+  --big-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+}
