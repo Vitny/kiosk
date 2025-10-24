@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/variables.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/discount.css" />
+    <title>Discount</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Discount</title>
-</head>
-
-<body>
-  <header>
-    <div class="news-section">
-      <div class="news-content">
-        <div>
-          <p class="news-header">Рассрочка 0%</p>
-          <p class="news-text">Без процентов и переплат</p>
-          <div class="news-slider-buttons">
-            <div class="news-slider-button"></div>
-            <div class="news-slider-button active-slide"></div>
-            <div class="news-slider-button"></div>
-            <div class="news-slider-button"></div>
-          </div>
+  <body>
+    <header>
+      <div class="header-buttons-section">
+        <div class="header-buttons">
+          <button class="button-header booking">Записаться</button>
+          <button class="button-header feedback">Оставить отзыв</button>
         </div>
-        <a class="detail-button" href="">Подробнее</a>
+        <div class="news-section">
+          <div class="news-content">
+            <div class="news-swiper">
+              <p class="news-header">Рассрочка 0%</p>
+              <p class="news-text">Без процентов и переплат</p>
+              <div class="news-slider-buttons">
+                <button class="news-slider-button"></button>
+                <button class="news-slider-button active-slide"></button>
+                <button class="news-slider-button"></button>
+                <button class="news-slider-button"></button>
+              </div>
+            </div>
+            <a class="detail-button" href="">Подробнее</a>
+          </div>
+          <div class="news-buttons">
+            <button class="left-button-news">
+              <img src="assets/svg/arrow-news.svg" alt="arroww icon" />
+            </button>
+            <button class="right-button-news">
+              <img src="assets/svg/arrow-news.svg" alt="arroww icon" />
+            </button>
+          </div>
+          <p class="news-disclaimer">
+            Реклама. Имеются противопоказания. Проконсультируйтесь со
+            специалистом.
+          </p>
+        </div>
       </div>
-      <div class="news-buttons">
-        <button class="left-button-news">
-          <img src="assets/svg/arrow-news.svg" alt="arroww icon">
-        </button>
-        <button class="right-button-news">
-          <img src="assets/svg/arrow-news.svg" alt="arroww icon">
-        </button>
+      <div class="search-input">
+        <img src="assets/svg/search-icon.svg" alt="magnifier icon" />
+        <input type="search" id="search" placeholder="Поиск по всем разделам" />
       </div>
-    </div>
-    <div class="search-input">
-      <img src="assets/svg/search-icon.svg" alt="magnifier icon">
-      <input type="search" id="search" placeholder="Поиск по всем разделам">
-    </div>
-  </header>
-
-  <main class="container">
-    <div class="left-section">
-      <div></div>
-      <a class="back-button" href="">
-        <img src="assets/svg/arrow-icon.svg" alt="arroww icon">
-        Назад
-      </a>
-    </div>
-    <div class="main-content">
       <div class="bread-crumbs-text">
         <span>Главный экран</span>
         <span>—</span>
@@ -55,36 +55,65 @@
         <span>—</span>
         <span>Диагностика зрения в подарок</span>
       </div>
-      <div class="discount-offer">
-        <div class="discount-offer-content">
-          <div class="period-discount-offer">По 31 декабря</div>
-          <img class="discount-offer-photo" src="assets/jpg/special/family.webp" alt="photo of people in glasses">
-          <div class="discount-offer-text">
-            <p class="discount-offer-header">Диагностика зрения – в подарок при выполнении лазерной коррекции</p>
-            <p class="discount-offer-maintext">Наслаждайся ярким летом без преград перед глазами!</p>
-            <p class="discount-offer-maintext">Диагностика зрения – в подарок при выполнении лазерной коррекции зрения
-              в течение месяца после прохождения обследования. Предложение действует с 1 по 31 августа 2025 г.
-              Подробности у сотрудников клиники.</p>
-            <p class="discount-offer-subtext">Имеются противопоказания. Проконсультируйтесь со специалистом</p>
-          </div>
-          <div class="discount-buttons">
-            <button class="button-main">Прайс-лист</button>
-            <button class="button-main">Записаться на приём</button>
+    </header>
+
+    <main class="container">
+      <div class="left-section">
+        <div></div>
+        <a class="back-button" href="">
+          <img src="assets/svg/arrow-icon.svg" alt="arroww icon" />
+          Назад
+        </a>
+      </div>
+      <div class="main-content discount">
+        <button class="left-button-discount">
+          <img src="assets/svg/arrow-news.svg" alt="arroww icon" />
+        </button>
+        <button class="right-button-discount">
+          <img src="assets/svg/arrow-news.svg" alt="arroww icon" />
+        </button>
+        <div class="discount-offer">
+          <div class="discount-offer-content">
+            <div class="period-discount-offer">По 31 декабря</div>
+            <img
+              class="discount-offer-photo"
+              src="assets/jpg/special/family.webp"
+              alt="photo of people in glasses"
+            />
+            <div class="discount-offer-text">
+              <p class="discount-offer-header">
+                Диагностика зрения – в подарок при выполнении лазерной коррекции
+              </p>
+              <p class="discount-offer-maintext">
+                Наслаждайся ярким летом без преград перед глазами!
+              </p>
+              <p class="discount-offer-maintext">
+                Диагностика зрения – в подарок при выполнении лазерной коррекции
+                зрения в течение месяца после прохождения обследования.
+                Предложение действует с 1 по 31 августа 2025 г. Подробности у
+                сотрудников клиники.
+              </p>
+              <p class="discount-offer-subtext">
+                Реклама. Имеются противопоказания. Проконсультируйтесь со
+                специалистом.
+              </p>
+            </div>
+            <div class="discount-buttons">
+              <button class="button-main discount">Прайс-лист</button>
+              <button class="button-main discount">Записаться на приём</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="right-section">
-      <div></div>
-      <a class="home-button" href="">
-        <img src="assets/svg/home-icon.svg" alt="arroww icon">
-        На главный экран
-      </a>
-    </div>
-  </main>
+      <div class="right-section">
+        <div></div>
+        <a class="home-button" href="">
+          <img src="assets/svg/home-icon.svg" alt="arroww icon" />
+          На главный экран
+        </a>
+      </div>
+    </main>
+  </body>
 
-</body>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </html>

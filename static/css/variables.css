@@ -1,11 +1,7 @@
 /* стили */
 :root {
   --Gradient-orange: linear-gradient(86deg, #ff5912 19.24%, #ff9623 106.12%);
-  --Gradient-blue: linear-gradient(
-    91.01deg,
-    rgba(18, 170, 255, 0.83) -7.24%,
-    #1577ca 91.55%
-  );
+  --Gradient-blue: linear-gradient(91.01deg, #0070d1 -7.24%, #12aaff 91.55%);
 
   --accent-blue: #0070d1;
   --accent-orange: #ff7000;

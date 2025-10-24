@@ -263,7 +263,7 @@ body {
 .news-slider-button {
   width: 12px;
   height: 12px;
-  background-color: var(--lightblue);
+  background-color: var(--turquoise);
   border-radius: 1000px;
 }
 
@@ -436,15 +436,13 @@ body {
   align-content: center;
   gap: 12px;
   flex-wrap: wrap;
-  border-radius: 24px;
+  border-radius: 30px;
   background: var(--Gradient-blue);
   color: white;
 
   font-size: 22px;
   font-weight: 400;
   letter-spacing: 1.2px;
-
-  margin-top: 20px;
 }
 
 .button-main:active {
