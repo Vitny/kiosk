@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/variables.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/doctor.css" />
+    <title>Doctor</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="static/css/index.css">
-  <link rel="stylesheet" href="static/css/doctor.css">
-  <title>Doctor</title>
-</head>
-
-<body>
-  <header>
-    <div class="news-section">
-      <div class="news-content">
-        <div>
-          <p class="news-header">Рассрочка 0%</p>
-          <p class="news-text">Без процентов и переплат</p>
-          <div class="news-slider-buttons">
-            <div class="news-slider-button"></div>
-            <div class="news-slider-button active-slide"></div>
-            <div class="news-slider-button"></div>
-            <div class="news-slider-button"></div>
-          </div>
+  <body>
+    <header>
+      <div class="header-buttons-section">
+        <div class="header-buttons">
+          <button class="button-header booking">Записаться</button>
+          <button class="button-header feedback">Оставить отзыв</button>
         </div>
-        <a class="detail-button" href="">Подробнее</a>
+        <div class="news-section">
+          <div class="news-content">
+            <div class="news-swiper">
+              <p class="news-header">Рассрочка 0%</p>
+              <p class="news-text">Без процентов и переплат</p>
+              <div class="news-slider-buttons">
+                <button class="news-slider-button"></button>
+                <button class="news-slider-button active-slide"></button>
+                <button class="news-slider-button"></button>
+                <button class="news-slider-button"></button>
+              </div>
+            </div>
+            <a class="detail-button" href="">Подробнее</a>
+          </div>
+          <div class="news-buttons">
+            <button class="left-button-news">
+              <img src="assets/svg/arrow-news.svg" alt="arroww icon" />
+            </button>
+            <button class="right-button-news">
+              <img src="assets/svg/arrow-news.svg" alt="arroww icon" />
+            </button>
+          </div>
+          <p class="news-disclaimer">
+            Реклама. Имеются противопоказания. Проконсультируйтесь со
+            специалистом.
+          </p>
+        </div>
       </div>
-      <div class="news-buttons">
-        <button class="left-button-news">
-          <img src="assets/svg/arrow-news.svg" alt="arroww icon">
-        </button>
-        <button class="right-button-news">
-          <img src="assets/svg/arrow-news.svg" alt="arroww icon">
-        </button>
+      <div class="search-input">
+        <img src="assets/svg/search-icon.svg" alt="magnifier icon" />
+        <input type="search" id="search" placeholder="Поиск по всем разделам" />
       </div>
-    </div>
-    <div class="search-input">
-      <img src="assets/svg/search-icon.svg" alt="magnifier icon">
-      <input type="search" id="search" placeholder="Поиск по всем разделам">
-    </div>
-  </header>
-
-  <main class="container">
-    <div class="left-section">
-      <div></div>
-      <a class="back-button" href="">
-        <img src="assets/svg/arrow-icon.svg" alt="arroww icon">
-        Назад
-      </a>
-    </div>
-
-    <div class="main-content">
       <div class="bread-crumbs-text">
         <span>Главный экран</span>
         <span>—</span>
@@ -57,124 +55,203 @@
         <span>—</span>
         <span>Ниличева Екатерина Сергеевна</span>
       </div>
-      <div class="doctor-page-container">
-        <div class="doctor-section">
-          <div class="doctor-header">
-            <div class="doctor-photo">
-              <img src="assets/png/doctors/doctor-photo2.webp" alt="">
-            </div>
-            <div class="doctor-header-content">
-              <p class="doctor-name">Ниличева Екатерина Сергеевна</p>
-              <p class="doctor-position">Офтальмохирург</p>
-              <p class="doctor-exp">Стаж работы 21 год</p>
-              <div class="doctor-tags">
-                <p>Отделения:</p>
-                <div class="doctor-tags-list">
-                  <span class="doctor-tag-chip">Взрослое отделение</span>
-                  <span class="doctor-tag-chip">Хирургия</span>
+    </header>
+
+    <main class="container">
+      <div class="left-section">
+        <div></div>
+        <a class="back-button" href="">
+          <img src="assets/svg/arrow-icon.svg" alt="arroww icon" />
+          Назад
+        </a>
+      </div>
+
+      <div class="main-content">
+        <div class="doctor-page-container">
+          <div class="doctor-section">
+            <div class="doctor-content">
+              <div class="doctor-header">
+                <div class="doctor-photo">
+                  <img src="assets/png/doctors/doctor-photo2.webp" alt="" />
+                </div>
+                <div class="doctor-header-content">
+                  <p class="doctor-name">Ниличева Екатерина Сергеевна</p>
+                  <p class="doctor-position">Офтальмохирург</p>
+                  <p class="doctor-exp">Стаж работы 21 год</p>
+                  <div class="doctor-tags">
+                    <p>Специализации:</p>
+                    <div class="doctor-tags-list">
+                      <span class="doctor-tag-chip">Лазерная коррекция</span>
+                      <span class="doctor-tag-chip">Лазерная терапия</span>
+                      <span class="doctor-tag-chip">Сетчатка</span>
+                      <span class="doctor-tag-chip">Катаракта</span>
+                    </div>
+                  </div>
+                  <div class="doctor-tags">
+                    <p>Отделения:</p>
+                    <div class="doctor-tags-list">
+                      <span class="doctor-tag-chip">Взрослое отделение</span>
+                      <span class="doctor-tag-chip">Хирургия</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="doctor-tags">
-                <p>Специализации:</p>
-                <div class="doctor-tags-list">
-                  <span class="doctor-tag-chip">Лазерная коррекция</span>
-                  <span class="doctor-tag-chip">Лазерная терапия</span>
-                  <span class="doctor-tag-chip">Сетчатка</span>
-                  <span class="doctor-tag-chip">Катаракта</span>
-                </div>
+
+              <div class="doctor-main-content">
+                <p class="doctor-text-header">Профессиональное образование:</p>
+                <li class="doctor-text">
+                  <span class="accent-text">2004 г.</span> – окончила
+                  Санкт-Петербургскую Государственную Педиатрическую Медицинскую
+                  Академию по специальности «врач-педиатр».
+                </li>
+                <li class="doctor-text">
+                  <span class="accent-text">2006-2008 гг.</span> – прошла
+                  подготовку в клинической ординатуре Санкт-Петербургской
+                  Государственной Педиатрической Медицинской Академии и окончила
+                  полный курс по специальности «офтальмология».
+                </li>
+                <li class="doctor-text">
+                  <span class="accent-text">2008 г.</span> – сдала
+                  квалификационный экзамен по специальности «офтальмология» при
+                  Санкт-Петербургской Государственной Педиатрической Медицинской
+                  Академии.
+                </li>
+                <li class="doctor-text">
+                  <span class="accent-text">2012 г.</span> – прошла курсы
+                  повышения квалификации по теме «Рефракционная лазерная
+                  офтальмохирургия» в Санкт-Петербургском филиале ФГБУ МНТК
+                  «Микрохирургия глаза им. Академика С. Н. Федорова».
+                </li>
+                <p class="doctor-text-header">Опыт работы:</p>
+                <li class="doctor-text">
+                  <span class="accent-text">С 2012 г. по настоящее время</span>
+                  – врач-офтальмохирург офтальмологической клиники «Эксимер» г.
+                  Санкт-Петербург. Акаде
+                </li>
+                <p class="doctor-text-header">Сертификаты:</p>
+                <img
+                  src="assets/png/doctors/certificate.png"
+                  alt="certificates"
+                />
               </div>
-            </div>
-          </div>
-          <div class="doctor-main-content">
-            <p class="doctor-text-header">Направления работы:</p>
-            <li class="doctor-text">Консультирование и определение методики лечения пациента.</li>
-            <li class="doctor-text">Владеет клиническими, инструментальными методами диагностики зрения и лечения
-              заболеваний глаз.</li>
-            <li class="doctor-text">Проведение лазерной коррекции зрения различными методиками.</li>
-            <p class="doctor-text-header">Направления работы:</p>
-            <li class="doctor-text">Консультирование и определение методики лечения пациента.</li>
-            <li class="doctor-text">Владеет клиническими, инструментальными методами диагностики зрения и лечения
-              заболеваний глаз.</li>
-            <li class="doctor-text">Проведение лазерной коррекции зрения различными методиками.</li>
-            <p class="doctor-text-header">Направления работы:</p>
-            <li class="doctor-text">Консультирование и определение методики лечения пациента.</li>
-            <li class="doctor-text">Владеет клиническими, инструментальными методами диагностики зрения и лечения
-              заболеваний глаз.</li>
-            <li class="doctor-text">Проведение лазерной коррекции зрения различными методиками.</li>
-            <p class="doctor-text-header">Направления работы:</p>
-            <li class="doctor-text">Консультирование и определение методики лечения пациента.</li>
-            <li class="doctor-text">Владеет клиническими, инструментальными методами диагностики зрения и лечения
-              заболеваний глаз.</li>
-            <li class="doctor-text">Проведение лазерной коррекции зрения различными методиками.</li>
-          </div>
-        </div>
-        <div class="review-section">
-          <p class="review-section-header">Отзывы о враче:</p>
-          <div class="review-list">
-            <div class="review">
-              <div class="review-header">
-                <div class="review-stars">
-                  <img src="assets/svg/star-review-icon.svg" alt="star-icon">
-                  <img src="assets/svg/star-review-icon.svg" alt="star-icon">
-                  <img src="assets/svg/star-review-icon.svg" alt="star-icon">
-                  <img src="assets/svg/star-review-icon.svg" alt="star-icon">
-                  <img src="assets/svg/star-review-icon.svg" alt="star-icon">
-                </div>
-                <p class="review-author">Анна М.</p>
-              </div>
-              <p class="review-text">Огромная благодарность Екатерине Сергеевне за неравнодушие, доброе и
-                профессиональное отношение к пациенту</p>
-              <p class="review-date">02.04.2025</p>
-            </div>
-            <div class="review-divider"></div>
-            <div class="review">
-              <div class="review-header">
-                <div class="review-stars">
-                  <img src="assets/svg/star-review-icon.svg" alt="star-icon">
-                  <img src="assets/svg/star-review-icon.svg" alt="star-icon">
-                  <img src="assets/svg/star-review-icon.svg" alt="star-icon">
-                  <img src="assets/svg/star-review-icon.svg" alt="star-icon">
-                  <img src="assets/svg/star-review-icon.svg" alt="star-icon">
-                </div>
-                <p class="review-author">Анна М.</p>
-              </div>
-              <p class="review-text">Огромная благодарность Екатерине Сергеевне за неравнодушие, доброе и
-                профессиональное отношение к пациенту</p>
-              <p class="review-date">02.04.2025</p>
-            </div>
-            <div class="review-divider"></div>
-            <div class="review">
-              <div class="review-header">
-                <div class="review-stars">
-                  <img src="assets/svg/star-review-icon.svg" alt="star-icon">
-                  <img src="assets/svg/star-review-icon.svg" alt="star-icon">
-                  <img src="assets/svg/star-review-icon.svg" alt="star-icon">
-                  <img src="assets/svg/star-review-icon.svg" alt="star-icon">
-                  <img src="assets/svg/star-review-icon.svg" alt="star-icon">
-                </div>
-                <p class="review-author">Анна М.</p>
-              </div>
-              <p class="review-text">Огромная благодарность Екатерине Сергеевне за неравнодушие, доброе и
-                профессиональное отношение к пациенту</p>
-              <p class="review-date">02.04.2025</p>
             </div>
           </div>
-          <button class="button-main review-button">Читать все отзывы на сайте</button>
+          <div class="review-section">
+            <p class="review-section-header">Отзывы о враче:</p>
+            <div class="review-list">
+              <div class="review">
+                <div class="review-header">
+                  <div class="review-stars">
+                    <img
+                      src="assets/svg/star-review-icon.svg"
+                      alt="star-icon"
+                    />
+                    <img
+                      src="assets/svg/star-review-icon.svg"
+                      alt="star-icon"
+                    />
+                    <img
+                      src="assets/svg/star-review-icon.svg"
+                      alt="star-icon"
+                    />
+                    <img
+                      src="assets/svg/star-review-icon.svg"
+                      alt="star-icon"
+                    />
+                    <img
+                      src="assets/svg/star-review-icon.svg"
+                      alt="star-icon"
+                    />
+                  </div>
+                  <p class="review-author">Анна М.</p>
+                </div>
+                <p class="review-text">
+                  Огромная благодарность Екатерине Сергеевне за неравнодушие,
+                  доброе и профессиональное отношение к пациенту
+                </p>
+                <p class="review-date">02.04.2025</p>
+              </div>
+              <div class="review">
+                <div class="review-header">
+                  <div class="review-stars">
+                    <img
+                      src="assets/svg/star-review-icon.svg"
+                      alt="star-icon"
+                    />
+                    <img
+                      src="assets/svg/star-review-icon.svg"
+                      alt="star-icon"
+                    />
+                    <img
+                      src="assets/svg/star-review-icon.svg"
+                      alt="star-icon"
+                    />
+                    <img
+                      src="assets/svg/star-review-icon.svg"
+                      alt="star-icon"
+                    />
+                    <img
+                      src="assets/svg/star-review-icon.svg"
+                      alt="star-icon"
+                    />
+                  </div>
+                  <p class="review-author">Анна М.</p>
+                </div>
+                <p class="review-text">
+                  Огромная благодарность Екатерине Сергеевне за неравнодушие,
+                  доброе и профессиональное отношение к пациенту
+                </p>
+                <p class="review-date">02.04.2025</p>
+              </div>
+              <div class="review">
+                <div class="review-header">
+                  <div class="review-stars">
+                    <img
+                      src="assets/svg/star-review-icon.svg"
+                      alt="star-icon"
+                    />
+                    <img
+                      src="assets/svg/star-review-icon.svg"
+                      alt="star-icon"
+                    />
+                    <img
+                      src="assets/svg/star-review-icon.svg"
+                      alt="star-icon"
+                    />
+                    <img
+                      src="assets/svg/star-review-icon.svg"
+                      alt="star-icon"
+                    />
+                    <img
+                      src="assets/svg/star-review-icon.svg"
+                      alt="star-icon"
+                    />
+                  </div>
+                  <p class="review-author">Анна М.</p>
+                </div>
+                <p class="review-text">
+                  Огромная благодарность Екатерине Сергеевне за неравнодушие,
+                  доброе и профессиональное отношение к пациенту
+                </p>
+                <p class="review-date">02.04.2025</p>
+              </div>
+            </div>
+            <button class="button-main review-button">
+              Читать все отзывы на сайте
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="right-section">
-      <div></div>
-      <a class="home-button" href="">
-        <img src="assets/svg/home-icon.svg" alt="arroww icon">
-        На главный экран
-      </a>
-    </div>
-  </main>
+      <div class="right-section">
+        <div></div>
+        <a class="home-button" href="">
+          <img src="assets/svg/home-icon.svg" alt="arroww icon" />
+          На главный экран
+        </a>
+      </div>
+    </main>
+  </body>
 
-</body>
-
-<script src="static/js/doctors.list.js"></script>
-
+  <script src="static/js/doctors.list.js"></script>
 </html>

@@ -340,14 +340,15 @@ body {
   display: flex;
   gap: 20px;
   width: 100%;
-  height: 800px;
+  height: 782px;
   justify-content: space-between;
+  margin-top: 12px;
 }
 
 .left-section,
 .right-section {
   display: flex;
-  width: 220px;
+  width: 236px;
   height: 100%;
   flex-direction: column;
   align-items: baseline;
@@ -461,6 +462,10 @@ body {
 .comment {
   height: 124px;
   resize: none;
+}
+
+.accent-text {
+  font-weight: 700;
 }
 
 /* show/hide */
