@@ -4,40 +4,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="static/css/variables.css" />
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/special-offers.css">
   <title>Special offers</title>
 </head>
 
 <body>
   <header>
-    <div class="news-section">
-      <div class="news-content">
-        <div>
-          <p class="news-header">Рассрочка 0%</p>
-          <p class="news-text">Без процентов и переплат</p>
-          <div class="news-slider-buttons">
-            <div class="news-slider-button"></div>
-            <div class="news-slider-button active-slide"></div>
-            <div class="news-slider-button"></div>
-            <div class="news-slider-button"></div>
-          </div>
+      <div class="header-buttons-section">
+        <div class="header-buttons">
+          <button class="button-header booking">Записаться</button>
+          <button class="button-header feedback">Оставить отзыв</button>
         </div>
-        <a class="detail-button" href="">Подробнее</a>
+        <div class="news-section">
+          <div class="news-content">
+            <div class="news-swiper">
+              <p class="news-header">Рассрочка 0%</p>
+              <p class="news-text">Без процентов и переплат</p>
+              <div class="news-slider-buttons">
+                <button class="news-slider-button"></button>
+                <button class="news-slider-button active-slide"></button>
+                <button class="news-slider-button"></button>
+                <button class="news-slider-button"></button>
+              </div>
+            </div>
+            <a class="detail-button" href="">Подробнее</a>
+          </div>
+          <div class="news-buttons">
+            <button class="left-button-news">
+              <img src="assets/svg/arrow-news.svg" alt="arroww icon" />
+            </button>
+            <button class="right-button-news">
+              <img src="assets/svg/arrow-news.svg" alt="arroww icon" />
+            </button>
+          </div>
+          <p class="news-disclaimer">
+            Реклама. Имеются противопоказания. Проконсультируйтесь со
+            специалистом.
+          </p>
+        </div>
       </div>
-      <div class="news-buttons">
-        <button class="left-button-news">
-          <img src="assets/svg/arrow-news.svg" alt="arroww icon">
-        </button>
-        <button class="right-button-news">
-          <img src="assets/svg/arrow-news.svg" alt="arroww icon">
-        </button>
+      <div class="search-input">
+        <img src="assets/svg/search-icon.svg" alt="magnifier icon" />
+        <input type="search" id="search" placeholder="Поиск по всем разделам" />
       </div>
-    </div>
-    <div class="search-input">
-      <img src="assets/svg/search-icon.svg" alt="magnifier icon">
-      <input type="search" id="search" placeholder="Поиск по всем разделам">
-    </div>
-  </header>
+      <div class="bread-crumbs-text">
+        <span>Главный экран</span>
+        <span>—</span>
+        <span>Специальные предложения</span>
+      </div>
+    </header>
 
   <main class="container">
     <div class="left-section">
@@ -48,13 +65,8 @@
       </a>
     </div>
     <div class="main-content">
-      <div class="bread-crumbs-text">
-        <span>Главный экран</span>
-        <span>—</span>
-        <span>Специальные предложения</span>
-      </div>
       <div class="special-container">
-        <p class="content-header">Специальные предложения</p>
+        <p class="content-header offers">Специальные предложения</p>
         <div class="special-content">
           <div class="special-card">
             <div class="period-special">По 31 декабря</div>
@@ -66,7 +78,7 @@
               <p class="special-card-maintext">Скидка на аппаратное лечение действует в течение 3 месяцев после
                 диагностики. Предложение действует до 31 декабря 2025 г. Не суммируется с другими акциями и дисконтной
                 программой. Подробности у сотрудников.</p>
-              <p class="special-card-subtext">Имеются противопоказания. Проконсультируйтесь со специалистом.</p>
+              <p class="special-card-disclaimer">Реклама. Имеются противопоказания. <br>Проконсультируйтесь со специалистом.</p>
             </div>
           </div>
           <div class="special-card">
@@ -76,21 +88,22 @@
               <p class="special-card-header">Рассрочка 0%</p>
               <p class="special-card-maintext">Без процентов и переплат
                 на лазерную коррекцию зрения и хирургические вмешательства в клинике "Эксимер" в Санкт-Петербурге.</p>
-              <p class="special-card-maintext">Не откладывайте радость отлично видеть.</p>
-              <p class="special-card-maintext">Подробности у сотрудников клиники.</p>
+                <p class="special-card-maintext">Не откладывайте радость отлично видеть.</p>
+                <p class="special-card-maintext">Подробности у сотрудников клиники.</p>
+                <p class="special-card-disclaimer">Реклама. Имеются противопоказания. <br>Проконсультируйтесь со специалистом.</p>
+              </div>
             </div>
-          </div>
-          <div class="special-card">
-            <div class="period-special">По 31 декабря</div>
-            <img class="special-card-photo" src="assets/jpg/special/students.webp" alt="photo of people in glasses">
-            <div class="special-card-text">
-              <p class="special-card-header">Видеть на отлично!</p>
-              <p class="special-card-maintext">Специальные условия для студентов: -15% на комплексную диагностику и
-                скидка 7% на лазерную коррекцию зрения.</p>
-              <p class="special-card-maintext">Предложение действует до 31 декабря 2025 г. при предъявлении
-                студенческого билета. Не суммируется с акциями и скидками по дисконтной карте. Подробности у сотрудников
-                клиники "Эксимер".</p>
-              <p class="special-card-subtext">Имеются противопоказания. Проконсультируйтесь со специалистом.</p>
+            <div class="special-card">
+              <div class="period-special">По 31 декабря</div>
+              <img class="special-card-photo" src="assets/jpg/special/students.webp" alt="photo of people in glasses">
+              <div class="special-card-text">
+                <p class="special-card-header">Видеть на отлично!</p>
+                <p class="special-card-maintext">Специальные условия для студентов: -15% на комплексную диагностику и
+                  скидка 7% на лазерную коррекцию зрения.</p>
+                  <p class="special-card-maintext">Предложение действует до 31 декабря 2025 г. при предъявлении
+                    студенческого билета. Не суммируется с акциями и скидками по дисконтной карте. Подробности у сотрудников
+                    клиники "Эксимер".</p>
+                    <p class="special-card-disclaimer">Реклама. Имеются противопоказания. <br>Проконсультируйтесь со специалистом.</p>
             </div>
           </div>
         </div>
@@ -106,7 +119,4 @@
   </main>
 
 </body>
-
-<script src="script.js"></script>
-
 </html>
