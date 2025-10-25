@@ -1,109 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/variables.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/navigate.css" />
+    <title>Navigate</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Navigate</title>
-</head>
-
-<body>
-  <header>
-    <div class="news-section">
-      <div class="news-content">
-        <div>
-          <p class="news-header">Рассрочка 0%</p>
-          <p class="news-text">Без процентов и переплат</p>
-          <div class="news-slider-buttons">
-            <div class="news-slider-button"></div>
-            <div class="news-slider-button active-slide"></div>
-            <div class="news-slider-button"></div>
-            <div class="news-slider-button"></div>
-          </div>
+  <body>
+    <header>
+      <div class="header-buttons-section">
+        <div class="header-buttons">
+          <button class="button-header booking">Записаться</button>
+          <button class="button-header feedback">Оставить отзыв</button>
         </div>
-        <a class="detail-button" href="">Подробнее</a>
+        <div class="news-section">
+          <div class="news-content">
+            <div class="news-swiper">
+              <p class="news-header">Рассрочка 0%</p>
+              <p class="news-text">Без процентов и переплат</p>
+              <div class="news-slider-buttons">
+                <button class="news-slider-button"></button>
+                <button class="news-slider-button active-slide"></button>
+                <button class="news-slider-button"></button>
+                <button class="news-slider-button"></button>
+              </div>
+            </div>
+            <a class="detail-button" href="">Подробнее</a>
+          </div>
+          <div class="news-buttons">
+            <button class="left-button-news">
+              <img src="assets/svg/arrow-news.svg" alt="arroww icon" />
+            </button>
+            <button class="right-button-news">
+              <img src="assets/svg/arrow-news.svg" alt="arroww icon" />
+            </button>
+          </div>
+          <p class="news-disclaimer">
+            Реклама. Имеются противопоказания. Проконсультируйтесь со
+            специалистом.
+          </p>
+        </div>
       </div>
-      <div class="news-buttons">
-        <button class="left-button-news">
-          <img src="assets/svg/arrow-news.svg" alt="arroww icon">
-        </button>
-        <button class="right-button-news">
-          <img src="assets/svg/arrow-news.svg" alt="arroww icon">
-        </button>
+      <div class="search-input">
+        <img src="assets/svg/search-icon.svg" alt="magnifier icon" />
+        <input type="search" id="search" placeholder="Поиск по всем разделам" />
       </div>
-    </div>
-    <div class="search-input">
-      <img src="assets/svg/search-icon.svg" alt="magnifier icon">
-      <input type="search" id="search" placeholder="Поиск по всем разделам">
-    </div>
-  </header>
-
-  <main class="container">
-    <div class="left-section">
-      <div></div>
-      <a class="back-button" href="">
-        <img src="assets/svg/arrow-icon.svg" alt="arroww icon">
-        Назад
-      </a>
-    </div>
-    <div class="main-content">
       <div class="bread-crumbs-text">
         <span>Главный экран</span>
         <span>—</span>
         <span>Навигация в клинике</span>
       </div>
-      <div class="navigate-container">
-        <p class="content-header">Навигация в клинике</p>
-        <div class="content-navigate">
-          <div class="toogle-navigate">
-            <div class="toggle-active-bg-nav"></div>
-            <button class="adult-nav active-btn">
-              Взрослое
-            </button>
-            <button class="kids-nav">
-              Детское
-            </button>
-            <button class="optics-nav">
-              Оптика
-            </button>
-          </div>
-        </div>
-        <div class="content-navigate-dep adult-nav-content">
-          <div class="text-content">
-            <p class="nav-header">Взрослое отделение</p>
-            <p class="nav-subheader">Диагностика</p>
-            <p class="nav-text">За гардеробом повернуть направо и пройти к лифту. Подняться на 3-й этаж</p>
-          </div>
-          <img src="assets/jpg/navigate/nav1.jpg" alt="navigate map">
-        </div>
-        <div class="content-navigate-dep kids-nav-content hide">
-          <div class="text-content">
-            <p class="nav-header">Детское отделение</p>
-            <p class="nav-text">За гардеробом повернуть направо и пройти к лифту. Подняться на 3-й этаж</p>
-          </div>
-          <img src="assets/jpg/navigate/nav2.jpg" alt="navigate map">
-        </div>
-        <div class="content-navigate-dep optics-nav-content hide">
-          <div class="text-content">
-            <p class="nav-header">Оптика</p>
-            <p class="nav-text">За гардеробом повернуть направо и пройти к лифту. Подняться на 3-й этаж</p>
-          </div>
-          <img src="assets/jpg/navigate/nav3.jpg" alt="navigate map">
+    </header>
+
+    <main class="container">
+      <div class="left-section">
+        <div></div>
+        <a class="back-button" href="">
+          <img src="assets/svg/arrow-icon.svg" alt="arroww icon" />
+          Назад
+        </a>
+      </div>
+      <div class="main-content">
+        <div class="nav-container">
+          <p class="content-header">Навигация в клинике</p>
+          <p class="nav-subheader">Как дойти до нужного отделения</p>
+          <button class="button-main nav">Диагностика</button>
+          <button class="button-main nav">Операции</button>
+          <button class="button-main nav">Послеоперационные осмотры</button>
+          <button class="button-main nav">Оптика</button>
+          <button class="button-main nav">Детям</button>
+          <button class="button-main nav">Аппаратное лечение</button>
         </div>
       </div>
-    </div>
-    <div class="right-section">
-      <div></div>
-      <a class="home-button" href="">
-        <img src="assets/svg/home-icon.svg" alt="arroww icon">
-        На главный экран
-      </a>
-    </div>
-  </main>
+      <div class="right-section">
+        <div></div>
+        <a class="home-button" href="">
+          <img src="assets/svg/home-icon.svg" alt="arroww icon" />
+          На главный экран
+        </a>
+      </div>
+    </main>
+  </body>
 
-</body>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </html>

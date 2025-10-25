@@ -1,0 +1,32 @@
+.nav-modal-body {
+  width: 1060px;
+  height: fit-content;
+  position: relative;
+  border-radius: 60px;
+  background: #fff;
+}
+
+.nav-modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px 75px 70px;
+}
+
+.nav-modal-header {
+  font-size: 36px;
+  color: var(--darkblue);
+  font-weight: 700;
+  text-align: center;
+}
+
+.nav-ol {
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+.nav-img {
+  margin-top: 24px;
+}
