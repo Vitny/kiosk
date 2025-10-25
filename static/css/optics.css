@@ -1,0 +1,74 @@
+.optics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1350px;
+}
+
+.optics-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  margin-top: 16px;
+}
+
+.optic-card {
+  width: 420px;
+  height: 592px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--medium-shadow);
+  flex-shrink: 0;
+  background-color: white;
+}
+
+.optic-card-text {
+  display: flex;
+  padding: 20px 28px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.optic-card-header {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--darkblue);
+}
+
+.optic-card-subheader {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.optic-card-photo {
+  width: 420px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.content-header.optics {
+  color: white;
+}
+
+.optics-location {
+  margin-top: 12px;
+  display: flex;
+  background: white;
+  border-radius: 30px;
+  width: 100%;
+  padding: 25px 140px;
+  gap: 26px;
+
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.optics-location-header {
+  color: var(--darkblue);
+}
