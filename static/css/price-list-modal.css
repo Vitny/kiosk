@@ -1,17 +1,30 @@
+::-webkit-scrollbar-track {
+  background: #eeeeee;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b7e5fd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #8ad4fc;
+}
+
 .price-modal-body {
   width: 1810px;
-  height: 1026px;
+  height: 1000px;
   position: relative;
   padding: 40px 100px 0 60px;
   border-radius: 24px;
-  background: #FFF;
+  background: #fff;
 
   font-size: 20px;
-  overflow: hidden;
 }
 
 .container-for-height {
-  height: 920px;
+  height: 890px;
 }
 
 .table-of-prices {
@@ -24,16 +37,24 @@
   font-size: 32px;
   font-weight: 400;
   margin-left: 10px;
+  color: var(--darkblue);
 }
 
+.price-modal-subheader {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+  opacity: 50%;
+}
 
 .table-list .container-for-height .table-of-prices .class-grid {
   display: grid;
   grid-auto-rows: minmax(54px, auto);
-  grid-template-areas: "t1 t2 t3 t4";
+  grid-template-areas: 't1 t2 t3 t4';
   grid-template-columns: 3fr 1fr 1fr 1fr;
   text-align: center;
   align-items: center;
+  min-height: 90px;
 
   font-size: 20px;
   font-weight: 600;
@@ -43,7 +64,6 @@
   margin-top: 12px;
   font-size: 24px;
   font-weight: 600;
-  border-bottom: 1px solid var(--lightblue);
 }
 
 .table-header :first-child,
@@ -52,7 +72,7 @@
 }
 
 .item {
-  padding: 16px 40px 12px 16px;
+  padding: 16px 40px 16px 24px;
 }
 
 .txt-notification {
@@ -62,22 +82,24 @@
 
 .item.price {
   font-size: 24px;
+  color: var(--accent-blue);
 }
 
 .item.price.promotion {
-  color: var(--warning-red);
+  color: var(--accent-orange);
 }
 
 .border-promotion {
-  border: 2px solid var(--warning-red);
-  border-radius: 12px;
+  border: 3px solid transparent;
+  border-radius: 24px;
+  background: linear-gradient(white, white) padding-box,
+    var(--Gradient-orange) border-box;
   position: relative;
-  margin: 12px 24px;
+  margin: 12px 40px;
 }
 
-
 .item.price.promotion.border-promotion:active {
-  background-color: rgba(104, 9, 9, 0.327);
+  background: #f1a1646b;
 }
 
 .arrow-promotion {
@@ -87,6 +109,8 @@
   transform: translateY(-50%);
 }
 
-.services.class-grid.odd {
-  background-color: #F7F6FE;
+.services.class-grid {
+  margin-top: 10px;
+  box-shadow: 0px 5px 8px rgba(30, 132, 217, 0.1);
+  border-radius: 30px;
 }

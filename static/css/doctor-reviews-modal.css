@@ -1,0 +1,46 @@
+.doctor-reviews-modal-body {
+  width: 510px;
+  height: 560px;
+  position: relative;
+  border-radius: 60px;
+  background: #fff;
+
+  top: 20px; /* это чисто чтобы отодвинуть окно ниже для отладки */
+}
+
+.doctor-reviews-modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px 75px;
+}
+
+.doctor-reviews-modal-header {
+  font-size: 36px;
+  color: var(--darkblue);
+  font-weight: 700;
+  text-align: center;
+}
+
+.qr-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 30px 6px;
+  border-radius: 30px;
+  box-shadow: 0px 5px 8px rgba(30, 132, 217, 0.1);
+}
+
+.qr-content img {
+  width: 70%;
+}
+
+.qr-content p {
+  font-size: 24px;
+  color: var(--darkblue);
+  font-weight: 400;
+  text-align: center;
+}

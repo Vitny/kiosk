@@ -1,0 +1,18 @@
+.doctor-photo-modal-body {
+  width: 1020px;
+  height: 1020px;
+  position: relative;
+  border-radius: 60px;
+  background: #fff;
+  
+  background: linear-gradient(269.72deg, #e3eaf0 10.38%, #b7e5fd 100%);
+
+  top: 20px; /* это чисто чтобы отодвинуть окно ниже для отладки */
+}
+.doctor-photo-modal-content {
+  overflow: hidden;
+  display: flex;
+}
+.doctor-photo-modal-content img {
+  width: 100%;
+}

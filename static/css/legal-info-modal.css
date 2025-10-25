@@ -1,19 +1,34 @@
+::-webkit-scrollbar-track {
+  background: #eeeeee;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b7e5fd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #8ad4fc;
+}
+
 .legal-modal-body {
   width: 1440px;
-  height: 1026px;
+  height: 980px;
   position: relative;
   padding: 40px 100px;
-  border-radius: 24px;
-  background: #FFF;
-  border: solid;
+  border-radius: 60px;
+  background: #fff;
   font-size: 20px;
-  overflow: hidden;
+
+  top: 20px; /* это чисто чтобы отодвинуть окно ниже для отладки */
 }
 
 .legal-modal-header {
   font-size: 32px;
   font-weight: 600;
   text-align: center;
+  color: var(--darkblue);
 }
 
 .legal-modal-content {
