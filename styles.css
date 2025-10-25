@@ -78,7 +78,7 @@ input::-ms-clear {
 }
 
 button,
-input[type="submit"] {
+input[type='submit'] {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;
@@ -93,13 +93,13 @@ button:active {
   outline: none;
 }
 
-input[type="search"] {
+input[type='search'] {
   width: 100%;
   box-sizing: border-box;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type='radio'],
+input[type='checkbox'] {
   display: none;
 }
 
@@ -116,24 +116,24 @@ legend {
   display: block;
 }
 
-input[type="file"] {
+input[type='file'] {
   max-width: 100%;
 }
 
 /* общие объекты */
 /* глобальные объекты */
 @font-face {
-  font-family: "Montserrat";
-  src: url("font/Montserrat/Montserrat-VariableFont_wght.ttf")
-    format("truetype");
+  font-family: 'Montserrat';
+  src: url('font/Montserrat/Montserrat-VariableFont_wght.ttf')
+    format('truetype');
   font-weight: 100 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf")
-    format("truetype");
+  font-family: 'Montserrat';
+  src: url('font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf')
+    format('truetype');
   font-weight: 100 900;
   font-style: italic;
 }
@@ -160,7 +160,7 @@ input[type="file"] {
 body {
   width: 1920px;
   height: 1080px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   border-style: double;
   padding: 20px 40px;
 }
@@ -403,90 +403,6 @@ body {
 }
 
 /* Страницы */
-/* Feedback */
-.feedback-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.content-feedback {
-  margin-top: 12px;
-  width: 644px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.rate-section {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.star-section,
-.rate-tag-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  font-size: 22px;
-  font-weight: 500;
-}
-
-.star-fill {
-  fill: #d89f02;
-}
-
-.rate-tag-cloud {
-  display: flex;
-  width: 1000px;
-}
-
-.rating {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 8px;
-}
-
-.star {
-  stroke-width: 3px;
-  stroke: #d89f02;
-}
-
-.rate-tag-section {
-  gap: 8px;
-}
-
-.rate-tag-cloud {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.rate-tag-cloud label {
-  display: flex;
-  padding: 10px 8px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 6px;
-  border: 1px solid #999;
-  cursor: pointer;
-  user-select: none;
-  transition: all 0.2s ease;
-}
-
-.rate-tag-cloud input[type="checkbox"]:checked + label {
-  background: var(--accent-orange);
-  border: 1px solid var(--accent-orange);
-  color: white;
-}
-
 /* Navigate */
 .navigate-container {
   display: flex;
