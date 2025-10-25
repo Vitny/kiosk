@@ -9,7 +9,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const allCheckbox = group.querySelector(`#${allId}`);
     const checkboxes = group.querySelectorAll('input[type="checkbox"]');
 
-    allCheckbox.checked = true;
+    // функция для сброса в состояние "Все ..."
+    function resetGroup() {
+      checkboxes.forEach(cb => {
+        cb.checked = cb.id === allId;
+      });
+    }
+
+    // по умолчанию "Все ..." выбрано
+    resetGroup();
 
     checkboxes.forEach(cb => {
       cb.addEventListener("change", () => {
@@ -18,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
           checkboxes.forEach(other => {
             if (other !== allCheckbox) other.checked = false;
           });
-          allCheckbox.checked = true; // защита от снятия
+          allCheckbox.checked = true;
         } else {
           // Если выбрали что-то другое → снять "Все ..."
           allCheckbox.checked = false;
@@ -33,9 +41,21 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     });
+
+    return { resetGroup };
   }
 
   // Запуск для двух групп
-  setupGroup(".filter-tags-specs", "s1");
-  setupGroup(".filter-tags-dep", "d1");
+  const depGroup = setupGroup(".filter-tags-dep", "d1");
+  const specGroup = setupGroup(".filter-tags-specs", "s1");
+
+  // Кнопка "Сбросить фильтры"
+  const resetBtn = document.querySelector(".reset-filters");
+  if (resetBtn) {
+    resetBtn.addEventListener("click", () => {
+      depGroup?.resetGroup();
+      specGroup?.resetGroup();
+      // Здесь можно добавить обновление списка врачей, если нужно
+    });
+  }
 });
