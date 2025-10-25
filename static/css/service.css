@@ -1,3 +1,13 @@
+.service-page-container {
+  width: 1350px;
+}
+
+.service-page-main {
+  background: white;
+  padding: 20px 16px;
+  border-radius: 30px;
+}
+
 .service-discount-card-list {
   display: flex;
   gap: 30px;
@@ -10,19 +20,17 @@
 }
 
 .service-page-container {
-  height: 808px;
+  height: 780px;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
 .service-page-content {
-  margin-top: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 12px;
-  padding: 0 16px 20px 4px;
+  padding-right: 16px;
 }
 
 .service-discount-card {
@@ -79,23 +87,66 @@
   font-weight: 400;
 }
 
-.service-page-main {
-  margin-top: 36px;
-}
-
 .service-page-header {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 20px;
+  color: var(--darkblue);
 }
 
 .service-page-buttons {
   display: flex;
+  justify-content: center;
   gap: 36px;
+  margin-top: 24px;
+}
+
+.button-main.service {
+  width: 380px;
+  height: 72px;
 }
 
 .service-page-text {
   margin-top: 20px;
   font-size: 20px;
   font-weight: 400;
+}
+
+.review {
+  width: 570px;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0px 5px 8px rgba(30, 132, 217, 0.1);
+  backdrop-filter: blur(3.75px);
+}
+
+.review-header {
+  display: flex;
+  gap: 16px;
+}
+
+.review-author {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(83, 83, 83);
+}
+
+.review-text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+.review-date {
+  text-align: end;
+  color: var(--grey);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.review-list {
+  margin-top: 12px;
+  display: flex;
+  gap: 16px;
+  padding: 0 16px 0 0;
 }

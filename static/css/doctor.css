@@ -113,6 +113,7 @@
 .review-section {
   display: flex;
   flex-direction: column;
+  overflow-x: auto;
   gap: 16px;
   width: 400px;
   padding: 16px;
@@ -121,8 +122,6 @@
   background: white;
   box-shadow: 0 4px 10px 0 rgba(0, 29, 103, 0.15);
   backdrop-filter: blur(3.75px);
-
-  align-self: flex-start;
 }
 
 .review-section-header {
