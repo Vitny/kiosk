@@ -40,21 +40,6 @@
   color: white;
 }
 
-.disclaimer-section {
-  background: white;
-  border-radius: 30px;
-  padding: 16px;
-  margin-top: 56px;
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  color: var(--darkblue);
-  font-size: 16px;
-  font-weight: 500;
-}
-
 /* toggle */
 .toggle-section {
   background: white;
