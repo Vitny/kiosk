@@ -24,8 +24,10 @@
   width: 434px;
   height: 400px;
   background: white;
-  border: solid 1px white;
-  border-radius: 20px;
+  border: 2px solid transparent;
+  border-radius: 24px;
+  background: linear-gradient(white, white) padding-box,
+    var(--Gradient-blue) border-box;
   overflow: hidden;
   box-shadow: var(--item-shadow);
   flex-shrink: 0;
@@ -57,6 +59,7 @@
   width: 580px;
   height: 200px;
   object-fit: cover;
+  border-radius: 24px;
 }
 
 .period-discount {
