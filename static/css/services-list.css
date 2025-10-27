@@ -20,11 +20,15 @@
   display: flex;
   padding: 16px 20px;
   justify-content: space-between;
-  background-color: var(--skyblue);
+  background-color: white;
   border-radius: 24px;
 
   font-size: 24px;
   font-weight: 600;
+}
+
+.services-button:active {
+  opacity: 75%;
 }
 
 .services-button img {

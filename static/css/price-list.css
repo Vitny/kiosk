@@ -20,7 +20,7 @@
 .price-list-button {
   display: flex;
   padding: 16px 20px;
-  background-color: var(--skyblue);
+  background-color: white;
   border-radius: 24px;
 
   font-size: 24px;
@@ -28,7 +28,7 @@
 }
 
 .price-list-button:active {
-  opacity: 60%;
+  opacity: 75%;
 }
 
 .price-list-button img {

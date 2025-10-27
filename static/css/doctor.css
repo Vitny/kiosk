@@ -116,6 +116,7 @@
   overflow-x: auto;
   gap: 16px;
   width: 400px;
+  height: fit-content;
   padding: 16px;
   max-height: 782px;
   border-radius: 30px;

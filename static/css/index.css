@@ -78,7 +78,7 @@ input::-ms-clear {
 }
 
 button,
-input[type='submit'] {
+input[type="submit"] {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;
@@ -93,13 +93,13 @@ button:active {
   outline: none;
 }
 
-input[type='search'] {
+input[type="search"] {
   width: 100%;
   box-sizing: border-box;
 }
 
-input[type='radio'],
-input[type='checkbox'] {
+input[type="radio"],
+input[type="checkbox"] {
   display: none;
 }
 
@@ -116,7 +116,7 @@ legend {
   display: block;
 }
 
-input[type='file'] {
+input[type="file"] {
   max-width: 100%;
 }
 
@@ -125,27 +125,27 @@ input[type='file'] {
 body {
   width: 1920px;
   height: 1080px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 20px 24px;
 
-  background-image: url('../../assets/png/bg-layer.png');
+  background-image: url("../../assets/png/bg-layer.png");
   background-size: 1920px;
   background-position: left;
   background-repeat: no-repeat;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../../font/Montserrat/Montserrat-VariableFont_wght.ttf')
-    format('truetype');
+  font-family: "Montserrat";
+  src: url("../../font/Montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../../font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf')
-    format('truetype');
+  font-family: "Montserrat";
+  src: url("../../font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-style: italic;
 }
@@ -502,7 +502,7 @@ body {
 }
 
 .index {
-  background-image: url('../../assets/png/map-bg.png');
+  background-image: url("../../assets/png/map-bg.png");
 }
 
 .index-content {
@@ -520,6 +520,10 @@ body {
   color: white;
   font-size: 24px;
   font-weight: 500;
+}
+
+.index-button:active {
+  opacity: 75%;
 }
 
 .excimer-info {

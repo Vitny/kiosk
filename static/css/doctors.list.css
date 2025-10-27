@@ -12,7 +12,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  gap: 14px;
+  gap: 12px;
   overflow-y: auto;
   padding-right: 12px;
 }
@@ -25,7 +25,7 @@
 }
 
 .doctors-card {
-  width: 320px;
+  width: 322px;
   height: 420px;
 
   border-radius: 24px;
@@ -128,8 +128,8 @@
   transition: all 0.2s ease;
 }
 
-.filter-tags-specs input[type='checkbox']:checked + label,
-.filter-tags-dep input[type='checkbox']:checked + label {
+.filter-tags-specs input[type="checkbox"]:checked + label,
+.filter-tags-dep input[type="checkbox"]:checked + label {
   background: var(--accent-blue);
   border: 1px solid var(--accent-blue);
   color: white;
