@@ -1,0 +1,29 @@
+.booking-confirm-content {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 608px;
+  height: fit-content;
+  position: relative;
+  border-radius: 40px;
+  background: #fff;
+  padding: 100px 60px 64px;
+}
+
+.booking-confirm-header {
+  width: 100%;
+  font-size: 36px;
+  color: var(--darkblue);
+  font-weight: 700;
+  text-align: center;
+}
+
+.booking-confirm-text {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center;
+}

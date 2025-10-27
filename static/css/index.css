@@ -386,6 +386,37 @@ body {
   gap: 0;
 }
 
+.home-button-end {
+  margin-top: 60px;
+  width: 236px;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  border: 3px solid white;
+  font-size: 20px;
+  font-weight: 600;
+
+  background-color: white;
+  border: 3px solid transparent;
+  border-radius: 30px;
+  background: linear-gradient(white, white) padding-box,
+    var(--Gradient-blue) border-box;
+}
+
+.home-button-end p {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: var(--Gradient-blue);
+  background-clip: text;
+}
+
+.home-button-end:active {
+  opacity: 60%;
+}
+
 .main-content {
   flex: 1;
   display: flex;
