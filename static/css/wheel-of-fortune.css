@@ -73,7 +73,7 @@
   width: 700px;
   background: white;
   border-radius: 30px;
-  padding: 26px 36px;
+  padding: 10px 36px 20px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -83,6 +83,7 @@
   color: var(--darkblue);
   font-size: 22px;
   font-weight: 600;
+  margin-top: 14px;
 }
 
 .textfield {
@@ -99,7 +100,7 @@
 }
 
 .content-submit-wof {
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 .wof-rules-container {
