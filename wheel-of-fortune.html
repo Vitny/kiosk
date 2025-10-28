@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Колесо призов / барабан</title>
+    <link rel="stylesheet" href="static/css/variables.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/wheel-of-fortune.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-buttons-section">
+        <div class="header-buttons">
+          <button class="button-header booking">Записаться</button>
+          <button class="button-header feedback">Оставить отзыв</button>
+        </div>
+        <div class="news-section">
+          <div class="news-content">
+            <div class="news-swiper">
+              <p class="news-header">Рассрочка 0%</p>
+              <p class="news-text">Без процентов и переплат</p>
+              <div class="news-slider-buttons">
+                <button class="news-slider-button"></button>
+                <button class="news-slider-button active-slide"></button>
+                <button class="news-slider-button"></button>
+                <button class="news-slider-button"></button>
+              </div>
+            </div>
+            <a class="detail-button" href="">Подробнее</a>
+          </div>
+          <div class="news-buttons">
+            <button class="left-button-news">
+              <img src="assets/svg/arrow-news.svg" alt="arroww icon" />
+            </button>
+            <button class="right-button-news">
+              <img src="assets/svg/arrow-news.svg" alt="arroww icon" />
+            </button>
+          </div>
+          <p class="news-disclaimer">
+            Реклама. Имеются противопоказания. Проконсультируйтесь со
+            специалистом.
+          </p>
+        </div>
+      </div>
+      <div class="search-input">
+        <img src="assets/svg/search-icon.svg" alt="magnifier icon" />
+        <input type="search" id="search" placeholder="Поиск по всем разделам" />
+      </div>
+      <div class="bread-crumbs-text">
+        <span>Главный экран</span>
+        <span>—</span>
+        <span>Колесо удачи</span>
+      </div>
+    </header>
+    <main class="container">
+      <div class="left-section">
+        <div></div>
+        <a class="back-button" href="">
+          <img src="assets/svg/arrow-icon.svg" alt="arroww icon" />
+          Назад
+        </a>
+      </div>
+      <div class="main-content">
+        <div class="container-wof">
+          <p class="content-header offers">Колесо удачи</p>
+          <div class="wheel-container">
+            <img src="assets/png/wof-pointer.png" alt="" />
+            <div class="wheel">
+              <!-- Призы добавляются сюда динамически -->
+            </div>
+          </div>
+          <div class="wof-submit-container">
+            <p class="wof-submit-header">1. Oзнакомтесь с правилами участия</p>
+            <div class="wof-rules-container">
+              <img src="assets/svg/info-notice.svg" alt="" />
+              <ul class="wof-rules-container-ul">
+                <li>Одна попытка в день на номер телефона</li>
+                <li>Сфотографируйте результат розыгрыша</li>
+                <li>
+                  Для получения приза обратитесь в регистратуру с фотографией
+                  результата
+                </li>
+              </ul>
+            </div>
+            <p class="wof-submit-header">2. Заполните поля</p>
+            <div class="content-submit-wof">
+              <input
+                class="textfield"
+                type="tel"
+                placeholder="+7 ___ ___ __ __"
+              />
+              <div class="checkbox-docs">
+                <input type="checkbox" />
+                <div class="text-docs">
+                  <p>
+                    Заполняя форму Вы соглашаетесь с
+                    <a class="checkbox-docs-link" href="">
+                      политикой конфиденциальности клиники «Эксимер»
+                    </a>
+                    и даете
+                    <a class="checkbox-docs-link" href=""
+                      >согласие на обработку персональных данных
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="button-main wof" id="spinBtn">Вращать</button>
+          </div>
+        </div>
+      </div>
+      <div class="right-section">
+        <div></div>
+        <a class="home-button" href="">
+          <img src="assets/svg/home-icon.svg" alt="arroww icon" />
+          На главный экран
+        </a>
+      </div>
+    </main>
+    <!-- Модальное окно -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <img src="assets/png/win-modal.png" alt="" />
+        <p class="win-modal-header">Поздравляем! <br />Ваш выигрыш</p>
+        <div class="win-text">
+          <div id="winText"></div>
+          <div class="winner-phone-container">
+            для <span class="winner-phone">+7 999 111 11 11</span>
+          </div>
+        </div>
+        <p class="win-modal-info">
+          Сфотографируйте результат розыгрыша и обратитесь в регистратуру для
+          получения приза
+        </p>
+        <button class="close-icon-button" id="closeModal">
+          <div class="close-icon-bg">
+            <img src="assets/svg/close-icon.svg" alt="close icon" />
+          </div>
+        </button>
+      </div>
+    </div>
+    <script src="static/js/wheel-of-fortune.js"></script>
+  </body>
+</html>
