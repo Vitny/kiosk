@@ -7,10 +7,7 @@ const prizes = [
     text: "Скидка 10% на диагностику зрения",
     img: "assets/png/wof-prizes/diagnostic.png",
   },
-  {
-    text: "Подарочный сертификат",
-    img: "assets/png/wof-prizes/gift-card.png",
-  },
+  { text: "Подарочный сертификат", img: "assets/png/wof-prizes/gift-card.png" },
   {
     text: "Бесплатный подбор очков",
     img: "assets/png/wof-prizes/optic-service.png",
@@ -19,10 +16,7 @@ const prizes = [
     text: "Скидка 7% на диагностику зрения",
     img: "assets/png/wof-prizes/diagnostic.png",
   },
-  {
-    text: "Подарочный сертификат",
-    img: "assets/png/wof-prizes/gift-card.png",
-  },
+  { text: "Подарочный сертификат", img: "assets/png/wof-prizes/gift-card.png" },
   {
     text: "Скидка 15% на диагностику зрения",
     img: "assets/png/wof-prizes/diagnostic.png",
@@ -35,50 +29,69 @@ const modal = document.getElementById("modal");
 const winText = document.getElementById("winText");
 const closeModal = document.getElementById("closeModal");
 
-let position = 0; // Текущий центральный индекс
+let position = 0;
 let spinning = false;
-let autoScrollInterval;
+let autoScrollInterval = null;
 
-function render() {
-  wheel.innerHTML = "";
-
-  for (let i = -2; i <= 2; i++) {
-    const idx = (position + i + prizes.length) % prizes.length;
-    const item = document.createElement("div");
-    item.classList.add("wheel-item");
-
-    if (i === 0) {
-      item.classList.add("size-center");
-    } else if (i === -1 || i === 1) {
-      item.classList.add("size-small");
-    } else {
-      item.classList.add("size-smallest");
-    }
+// Создаём DOM элементы
+function initWheel() {
+  prizes.forEach((item, idx) => {
+    const div = document.createElement("div");
+    div.classList.add("wheel-item");
+    div.dataset.index = idx;
 
     const img = document.createElement("img");
-    img.src = prizes[idx].img;
-    img.alt = prizes[idx].text;
+    img.src = item.img;
+    img.alt = item.text;
     img.className = "wheel-image";
 
     const text = document.createElement("div");
-    text.textContent = prizes[idx].text;
+    text.textContent = item.text;
 
-    item.appendChild(img);
-    item.appendChild(text);
-    wheel.appendChild(item);
-  }
+    div.append(img, text);
+    wheel.append(div);
+  });
+  updatePositions();
 }
 
-// Начальная отрисовка
-render();
+// Обновляем позиции (с анимацией)
+function updatePositions() {
+  const items = wheel.querySelectorAll(".wheel-item");
+  const visibleRadius = 2;
 
-// Для демонстрационного автоцикла перед запуском
+  items.forEach((el) => {
+    const idx = parseInt(el.dataset.index);
+    let diff = idx - position;
+    const n = prizes.length;
+
+    if (diff > n / 2) diff -= n;
+    if (diff < -n / 2) diff += n;
+
+    if (Math.abs(diff) <= visibleRadius) {
+      el.classList.add("visible");
+      const scale = 1 - Math.abs(diff) * 0.15;
+      const offsetX = diff * 260;
+      const offsetY = Math.abs(diff) * 15;
+      const zIndex = 10 - Math.abs(diff);
+
+      el.style.transform = `translateX(${offsetX}px) translateY(${offsetY}px) scale(${scale})`;
+      el.style.zIndex = zIndex;
+      el.style.opacity = 1;
+    } else {
+      el.classList.remove("visible");
+      el.style.opacity = 0;
+      el.style.transform = `translateX(0) scale(0.7)`;
+    }
+  });
+}
+
+// Автопрокрутка
 function startAutoScroll() {
   if (autoScrollInterval) return;
   autoScrollInterval = setInterval(() => {
     position = (position + 1) % prizes.length;
-    render();
-  }, 2500);
+    updatePositions();
+  }, 3000);
 }
 
 function stopAutoScroll() {
@@ -86,59 +99,49 @@ function stopAutoScroll() {
   autoScrollInterval = null;
 }
 
-startAutoScroll();
-
-// Обработка вращения по кнопке
+// Анимация вращения с переменной скоростью (250 → 400 мс)
 spinBtn.addEventListener("click", () => {
   if (spinning) return;
   spinning = true;
   stopAutoScroll();
 
-  const spinTime = 7000 + Math.random() * 2000; // 3-5 секунд
+  const minDelay = 250; // начальная скорость (меньше — быстрее)
+  const maxDelay = 400; // конечная скорость (больше — медленнее)
+  const totalSpins =
+    prizes.length * 2 + Math.floor(Math.random() * prizes.length); // тут делается 2 полных оборота и небольшое количество случайных шагов
+  let currentStep = 0;
+  let currentDelay = minDelay;
 
-  const spinStart = Date.now();
-  let lastMoveTime = 0; // Время последнего сдвига
+  function nextStep() {
+    position = (position + 1) % prizes.length;
+    updatePositions();
+    currentStep++;
 
-  function spinAnimation() {
-    const elapsed = Date.now() - spinStart;
-    const progress = Math.min(1, elapsed / spinTime);
+    // плавное увеличение задержки (эффект ease-out)
+    const progress = currentStep / totalSpins;
+    currentDelay = minDelay + (maxDelay - minDelay) * progress * progress; // замедляется квадратично
 
-    // Функция замедления (quadratic easeOut)
-    function easeOutQuad(x) {
-      return 1 - (1 - x) * (1 - x);
-    }
-
-    // Максимальный и минимальный delay между шагами (например, 50–450 мс)
-    const minDelay = 50; // быстро в начале
-    const maxDelay = 350; // замедление к концу
-
-    // Вычисляем текущую задержку с помощью easing
-    const currentDelay =
-      minDelay + (maxDelay - minDelay) * easeOutQuad(progress);
-
-    if (elapsed < spinTime) {
-      if (Date.now() - lastMoveTime >= currentDelay) {
-        position = (position + 1) % prizes.length;
-        render();
-        lastMoveTime = Date.now();
-      }
-      requestAnimationFrame(spinAnimation);
+    if (currentStep < totalSpins) {
+      setTimeout(nextStep, currentDelay);
     } else {
-      // Завершающая фиксация на результате
       const resultIdx = position;
       setTimeout(() => {
         winText.innerHTML = `${prizes[resultIdx].text}`;
         modal.classList.remove("hidden");
         spinning = false;
         startAutoScroll();
-      }, 1200); //время паузы
+      }, 1000);
     }
   }
 
-  spinAnimation();
+  nextStep();
 });
 
-// Закрыть модальное окно
+// Модалка
 closeModal.addEventListener("click", () => {
   modal.classList.add("hidden");
 });
+
+// Инициализация
+initWheel();
+startAutoScroll();

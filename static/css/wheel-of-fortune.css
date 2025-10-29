@@ -5,44 +5,6 @@
   color: white;
 }
 
-.wheel-container {
-  position: relative;
-  width: 600px;
-  margin: 36px auto;
-  text-align: center;
-  user-select: none;
-}
-
-.wheel-container > img {
-  position: absolute;
-  z-index: 10;
-  left: 265px;
-  top: -35px;
-}
-
-.wheel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 190px;
-  perspective: 1000px;
-  overflow: visible;
-}
-
-.wheel-item {
-  transition: all 0.5s ease;
-  border-radius: 24px;
-  padding: 30px;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-  font-weight: 700;
-  flex-shrink: 0;
-  font-size: 20px;
-}
-
 .size-small {
   width: 310px;
   height: 150px;
@@ -127,14 +89,6 @@
   list-style-type: circle;
 }
 
-.wheel-image {
-  display: block;
-  margin: 0 auto 7px auto;
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-}
-
 /* Модальное окно */
 .modal {
   position: fixed;
@@ -201,4 +155,61 @@
   margin-top: 36px;
   font-size: 28px;
   font-weight: 400;
+}
+
+.wheel-container {
+  position: relative;
+  width: 360px;
+  height: 220px;
+  margin: auto;
+  text-align: center;
+  user-select: none;
+}
+
+.wheel-container > img {
+  position: absolute;
+  left: 142px;
+  top: -45px;
+  z-index: 100;
+}
+
+.wheel {
+  margin-top: 60px;
+  position: relative;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wheel-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  background: white;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  width: 360px;
+  height: 180px;
+  text-align: center;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.7);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.wheel-item.visible {
+  opacity: 1;
+}
+
+.wheel-image {
+  display: block;
+  margin: 0 auto 7px auto;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
 }
