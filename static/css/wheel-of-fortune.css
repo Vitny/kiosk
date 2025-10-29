@@ -15,7 +15,7 @@
 
 .wheel-container > img {
   position: absolute;
-  z-index: 1000;
+  z-index: 10;
   left: 265px;
   top: -35px;
 }
