@@ -100,6 +100,10 @@
   font-weight: 400;
 }
 
+.no-header {
+  margin-top: 28px;
+}
+
 .doctor-main-content {
   margin-top: 16px;
   width: 100%;
@@ -171,8 +175,9 @@
 
 .review-list {
   display: flex;
+  flex-direction: column;
   gap: 16px;
-  padding: 0 16px 0 0;
+  padding: 0 16px 4px 0;
   overflow-x: auto;
 }
 
