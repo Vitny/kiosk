@@ -1,0 +1,74 @@
+::-webkit-scrollbar-track {
+  background: #eeeeee;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b7e5fd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #8ad4fc;
+}
+
+.LVC-modal-body {
+  width: 1440px;
+  position: relative;
+  padding: 40px 100px;
+  border-radius: 60px;
+  background: #fff;
+  font-size: 24px;
+
+  top: 20px; /* это чисто чтобы отодвинуть окно ниже для отладки */
+}
+
+.LVC-modal-content > p {
+  margin-top: 8px;
+}
+
+.LVC-modal-header {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--darkblue);
+}
+
+.LVC-modal-content > * {
+  margin-top: 28px;
+}
+
+.LVC-modal-content {
+  overflow-y: auto;
+  height: 90%;
+  padding-right: 16px;
+}
+
+.LVC-modal-content-accent {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--darkblue);
+}
+
+.LVC-modal-content ul {
+  margin: 12px 0 20px 30px;
+}
+
+.LVC-modal-content ul li {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 12px;
+  padding-left: 17px;
+  position: relative;
+}
+
+.LVC-modal-content ul li:before {
+  background: var(--Gradient-orange);
+  border-radius: 50%;
+  content: "";
+  height: 7px;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  width: 7px;
+}
