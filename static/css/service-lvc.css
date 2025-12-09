@@ -409,8 +409,8 @@
   background: var(--Gradient-orange);
   border-radius: 50%;
   content: "";
-  height: 10px;
-  width: 10px;
+  height: 8px;
+  width: 8px;
   left: 0;
   position: absolute;
   top: 6px;

@@ -66,9 +66,9 @@
   background: var(--Gradient-orange);
   border-radius: 50%;
   content: "";
-  height: 7px;
+  height: 8px;
+  width: 8px;
   left: 0;
   position: absolute;
   top: 10px;
-  width: 7px;
 }
