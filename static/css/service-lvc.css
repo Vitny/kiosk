@@ -304,6 +304,7 @@
   gap: 6px;
   flex: 1 0 0;
   align-self: stretch;
+  margin-bottom: 16px;
 }
 
 .video-card-header {
@@ -318,11 +319,11 @@
   line-height: 22px;
 }
 
-.video-card-photo {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
+.card-photo {
   border-radius: 20px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .left-button-card {
